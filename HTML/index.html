@@ -26,44 +26,91 @@
 <body>
 
     <header>
-        <img class="logo" src="../Assets/Media/Logo_principal.png" alt="Image de mon logo">
-        <nav class="navbar navbar-light bg-transparent fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <div class="header-container p-0 m-0 d-flex w-100 justify-content-between">
+            <img class="logo" src="../Assets/Media/Logo_principal.png" alt="Image de mon logo">
+
+            <!--                                  NAVBAR                                   -->
+
+
+            <nav class="menu navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body bg-image">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">À propos de moi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Mes projets</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Labo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blogs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Me contacter</a>
-                            </li>
-                        
-                        </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Labo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+
+
+            <!--                                  NAVBAR                                   -->
+
+
+            <!--                                 MENU BURGER                               -->
+
+
+            <nav class="burger navbar navbar-light bg-transparent fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body bg-image">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">À propos de moi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Mes projets</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Labo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Me contacter</a>
+                                </li>
+                            
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+
+
+        <!--                                MENU BURGER                    -->
+
 
         <div class="container d-flex justify-content-center flex-column w-75">
 
@@ -84,14 +131,44 @@
 
     <main>
 
+        <section class="about">
+
+
+        </section>
+
+        <section class="projects">
+
+
+        </section>
+
+        <section class="lab">
+
+
+        </section>
+
+        <section class="blog">
+
+
+        </section>
+
+        <section class="contact">
+
+
+        </section>
+
 
 
 
     </main>
     
-    <footer>
-
-
+    <footer class="w-100 d-flex justify-content-around align-items-center flex-column">
+        <div class="w-75 d-flex justify-content-around align-items-center m-0 p-0">
+            <a href="https://github.com/AdrienSoriano" target="_blank"><img src="../Assets/Media/Github_footer.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/adrien-soriano-695b46a7/" target="_blank"><img src="../Assets/Media/Linkedin_footer.svg" alt=""></a>
+            <a href="https://discord.gg/q2ZU8bvBSm" target="_blank"><img src="../Assets/Media/Discord_footer.svg" alt=""></a>
+            <a href=""><img src="../Assets/Media/Facebook_footer.svg" alt=""></a>
+        </div>
+        <p class="w-100 text-center m-0 fw-bold">&copy; 2022 - Adrien Soriano</p>
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

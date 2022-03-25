@@ -8,9 +8,19 @@ html{
     font-size: 20px;
 }
 header{
-    width: 100vw;
     height: 100vh;
     background-color: #2A2A2C;
+}
+.header-container{
+    width: 90%!important;
+    margin-left: 2%!important;
+    margin-right: 2%!important;
+}
+.menu ul li a{
+    color: #E4E3E3!important;
+}
+.burger{
+    display: none;
 }
 h1{
     color: #E4E3E3;
@@ -78,4 +88,8 @@ h2{
         left:0;
     }
 }
-  
+footer{
+    background-color: #0E0E10;
+    color: #E4E3E3;
+    height: 30vh!important;
+}
