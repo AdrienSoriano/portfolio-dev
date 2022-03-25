@@ -60,6 +60,9 @@
             left:0;
         }
     }
+    .about-icon{
+        width: 7%;
+    }
     footer{
         height: 10vh!important;
     }
