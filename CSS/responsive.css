@@ -63,6 +63,9 @@
     .about-icon{
         width: 7%;
     }
+    .project-icon{
+        width: 20%;
+    }
     footer{
         height: 10vh!important;
     }

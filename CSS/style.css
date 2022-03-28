@@ -156,6 +156,64 @@ p{
 .shell{
     width: 60%;
 }
+.git{
+    width: 80%;
+}
+.wordpress{
+    width: 60%;
+}
+.projects{
+    background-color: #2A2A2C;
+    margin: 0%;
+    padding: 0%;
+}
+.projects button::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 200%;
+    transform: rotate(-15deg) translateY(-20px);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #c70039;
+    transition: all .7s ease;
+}
+.projects button{
+    background: transparent;
+    outline: none;
+    border: 1.5px solid #FB1B41;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s ease;
+}
+.projects button:hover{
+    opacity: 1;
+    color:#E4E3E3;
+}
+ .projects button:hover .index{
+     position: relative;
+    z-index: 4;
+    color: #E4E3E3;
+}
+.projects button:hover::before{
+    opacity: 1;
+    width: 120%;
+}
+.projects button{
+    text-align: center;
+}
+.project {
+    background-color: #0E0E10;
+    width: 74%;
+}
+.descr-projet{
+    line-height: 25px;
+    letter-spacing: 5%;
+    color: #E4E3E3;
+    font-size: 1.2rem;
+    width: 90%;
+}
 footer{
     background-color: #0E0E10;
     color: #E4E3E3;
