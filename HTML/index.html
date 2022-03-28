@@ -16,8 +16,7 @@
     <link rel="icon" type="image/png" href="../Assets/Media/Favicon.png">
     <title>Adrien Soriano - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="stylesheet" href="../CSS/mobile-first.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -112,7 +111,7 @@
         <!--                                MENU BURGER                    -->
 
 
-        <div class="container d-flex justify-content-center flex-column w-75">
+        <div class="container d-flex justify-content-center flex-column w-100">
 
             <h1 class="w-100 text-center"><span class="main-color mr-5">Adrien </span>Soriano</h1>
             <div class="wrapper">
@@ -138,7 +137,7 @@
             <h4 class="text-center fw-bold">Présentation</h4>
             <div class="container d-flex flex-column align-items-center">
                 <h5 class="text-center w-75"><span class="main-color">Développeur web</span> situé à Besançon en Franche-Comté</h5>
-                <p>Je suis un développeur web débutant, sortant tout juste d’une formation qualifiée bac+2 par le biais de Onlineformapro. Vous trouverez plus bas mon CV et mes compétences.</p>
+                <p class="p-3">Je suis un développeur web débutant, sortant tout juste d’une formation qualifiée bac+2 par le biais de Onlineformapro. Vous trouverez plus bas mon CV et mes compétences.</p>
                 <h5><span class="neon">Développeur web Full Stack</span></h5>
             </div>
 
@@ -253,30 +252,84 @@
             <div class="d-flex flex-column align-items-center mt-5">
                 <img src="../Assets/Media/Projet_restaurant.png" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
-                    <h4 class="mb-4"><span class="main-color">Projet restaurant</span></h4>
+                    <h6 class="mb-4"><span class="main-color">Projet restaurant</span></h6>
                     <p class="descr-projet">Projet d’étude consistant à mettre en place le site vitrine d’un restaurant avec un back-office. Les menus sont mis en place à l’aide d’une base de données.</p>
-                    <button type="button" class="btn"><span class="main-color index">Plus de détails</span></button>
+                    <button type="button" class="btn mt-3"><span class="main-color index">Plus de détails</span></button>
                 </div>
             </div>
 
             <div class="d-flex flex-column align-items-center mt-5">
                 <img src="../Assets/Media/Projet_github.png" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
-                    <h4 class="mb-4"><span class="main-color">Projet Github search app</span></h4>
+                    <h6 class="mb-4"><span class="main-color">Projet Github search app</span></h6>
                     <p class="descr-projet">Projet réalisé dans le cadre de ma formation. Le but était de créer un site et d’intégrer l’API de Github à celui-ci.</p>
-                    <button type="button" class="btn"><span class="main-color index">Plus de détails</span></button>
+                    <button type="button" class="btn mt-3"><span class="main-color index">Plus de détails</span></button>
                 </div>
             </div>
 
         </section>
 
-        <section class="lab">
+        <section class="lab d-flex flex-column align-items-center">
+
+            <h3 class="pt-5">Labo<img class="lab-icon" src="../Assets/Media/Labo_icon.svg" alt=""></h3>
+
+            <h4 class="p-5 mb-5">Projets d’experimentation <span class="main-color">personnels</span>.</h4>
+
+            <div class="d-flex flex-column align-items-center mt-5">
+                <img src="../Assets/Media/Projet_ordercard.png" alt="">
+                <div class="project d-flex flex-column align-items-center p-5">
+                    <h6 class="mb-4"><span class="main-color">Order card</span></h6>
+                    <p class="descr-projet">Projet consistant à mettre en place une carte de commande à l’aide d’une maquette donnée. Le but était de me familiariser avec Bootstrap.</p>
+                    <button type="button" class="btn mt-3"><span class="main-color index">Plus de détails</span></button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center mt-5">
+                <img src="../Assets/Media/Projet_ordercard.png" alt="">
+                <div class="project d-flex flex-column align-items-center p-5">
+                    <h6 class="mb-4"><span class="main-color">Formulaire de contact</span></h6>
+                    <p class="descr-projet">Projet que j’ai créé dans le but d’apprendre à réaliser un envoie de mail via un form avec l’AJAX.</p>
+                    <button type="button" class="btn mt-3"><span class="main-color index">Plus de détails</span></button>
+                </div>
+            </div>
 
 
         </section>
 
-        <section class="blog">
+        <section class="blog d-flex flex-column align-items-center">
 
+            <h3 class="pt-5"><img class="blog-icon" src="../Assets/Media/Blog_icon.svg" alt="">Blog</h3>
+
+            <h4 class="p-5 mb-5">Mes derniers <span class="main-color">articles de blog</span>.</h4>
+
+            <div class="d-flex flex-column align-items-center mt-5">
+                <div>
+                    <img src="../Assets/Media/Blog_tor.png" alt="">
+                    <div class="date-tor">
+                        <span class="date">23 mar, 22</span>
+                    </div>
+                </div>
+                    <div class="project d-flex flex-column align-items-center p-0 mt-2">
+                        <h6 class="mb-4">Le projet Tor</h6>
+                        <p class="descr-projet text-center">Qu’est-ce que Tor ?</p>
+                            <p class="descr-projet text-center">Tor Project est un navigateur web composé de nœuds réseaux permettant de rendre anonyme la connexion TCP. Il permet donc une navigation anonyme et sécurisée pour obtenir autant de confidentialité que possible. TOR signifie The Onion Router (le routage en oignon) et permet de naviguer sur des sites en...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mt-5">
+                <div>
+                    <img src="../Assets/Media/Blog_python.png" alt="">
+                    <div class="date-python">
+                        <span class="date">15 mar, 22</span>
+                    </div>
+                </div>
+                    <div class="project d-flex flex-column align-items-center p-0 mt-2">
+                        <h6 class="mb-4">Python</h6>
+                        <p class="descr-projet text-center">Python, c’est quoi ?</p>
+                            <p class="descr-projet text-center">Python est un langage de programmation open source et un langage dynamique. Son créateur, Guido Van, l’a créé en 1991. Son nom fait référence à la troupe de comédiens anglais, Monty Python. Au départ il ne fut pas très populaire, mais depuis le début des années 2000 son utilisation augmente...</p>
+                    </div>
+                </div>
+            </div>
 
         </section>
 

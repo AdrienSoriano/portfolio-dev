@@ -5,7 +5,7 @@
     font-family: 'Rubik';
 }
 html{
-    font-size: 20px;
+    font-size: 14px;
 }
 header{
     height: 100vh;
@@ -16,15 +16,30 @@ header{
     margin-left: 2%!important;
     margin-right: 2%!important;
 }
+.logo{
+    width: 30%;
+}
+.menu{
+    display: none;
+}
+.burger{
+    display: flex;
+}
+.burger ul li a{
+    color: #E4E3E3!important;
+    font-size: 3rem;
+    line-height: 200%;
+}
+.container-fluid{
+    width: 90%!important;
+}
 .menu ul li a{
     color: #E4E3E3!important;
 }
-.burger{
-    display: none;
-}
 h1{
     color: #E4E3E3;
-    font-size: 3.5rem;
+    font-size: 3rem;
+    margin-top: 20%;
 }
 .main-color{
     color: #FB1B41;
@@ -34,16 +49,17 @@ h1{
 }
 h2{
     color: #E4E3E3;
-    font-size: 2.5rem;
-    padding-left: 10%;
+    padding-left: 0;
+    width: 100%!important;
+    font-size: 1.2rem!important;
 }
 .wrapper{
-    display: inline-flex;
+    width: 100%!important;
 }
 .wrapper .dynamic-txts{
-    margin-left: 15px;
-    height: 60px;
-    line-height: 60px;
+    margin-left: 0px;
+    height: 20px;
+    line-height: 20px;
     overflow: hidden;
 }
 .dynamic-txts li{
@@ -55,7 +71,7 @@ h2{
 }
 @keyframes slide {
     100%{
-        top: -180px;
+        top: -60px;
     }
   }
 .dynamic-txts li span{
@@ -81,7 +97,7 @@ h2{
 @keyframes typing {
     40%,
     60%{
-        left: calc(91% + 30px);
+        left: calc(77% + 25px);
         margin: 0 -35px 0 35px;
     }
     100%{
@@ -105,7 +121,7 @@ h3{
 }
 h4{
     color: #E4E3E3;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 h5{
     color: #E4E3E3;
@@ -114,7 +130,6 @@ h5{
 .about p{
     color: #E4E3E3;
     text-align: center;
-    font-size: 1.2rem;
 }
 .neon{
     text-shadow: 0px 0px 10px #5C93C9;
@@ -169,6 +184,9 @@ h5{
     margin: 0%;
     padding: 0%;
 }
+.project-icon{
+    width: 20%;
+}
 h6{
     font-size: 2rem;
 }
@@ -211,7 +229,7 @@ h6{
 }
 .project {
     background-color: #0E0E10;
-    width: 74%;
+    width: 75%;
 }
 .descr-projet{
     line-height: 25px;
@@ -232,8 +250,45 @@ h6{
 .blog-icon{
     width: 30%;
 }
+.about-icon{
+    width: 7%;
+}
+.blog h6{
+    color: #E4E3E3;
+}
+.date-tor{
+    background-color: #FB1B41;
+    position: absolute;
+        color: #E4E3E3;
+        text-align: center;
+        width: 40%;
+        top: 612.7%;
+}
+.date-python{
+    background-color: #FB1B41;
+    position: absolute;
+        color: #E4E3E3;
+        text-align: center;
+        width: 40%;
+        top: 684.6%;
+}
+.date{
+    color: #E4E3E3;
+    font-size: 2rem;
+}
 footer{
     background-color: #0E0E10;
     color: #E4E3E3;
-    height: 30vh!important;
+    height: 10vh!important;
+}
+footer img{
+    width: 50%;
+}
+footer p{
+    font-size: 1.5rem;
+}
+.bg-image{
+    background-image: url(../Assets/Media/wp5197492.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
