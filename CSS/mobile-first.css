@@ -58,8 +58,8 @@ h2{
     color: #E4E3E3;
     padding-left: 0;
     width: 100%!important;
-    font-size: 2rem!important;
-    word-wrap: break-word;
+    font-size: 1.5rem!important;
+    word-break: break-all;
 }
 .wrapper{
     width: 100%!important;
