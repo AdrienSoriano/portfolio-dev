@@ -23,7 +23,23 @@
     
 </head>
 <body>
+<!--
 
+    00        00    000000000000           0000000          000000000000            000000000000    000000000000
+    00        00    000000000000          000000000         00000000000000          000000000000    0000000000000
+    00        00    00                   000     000        00         0000         00              000        000
+    00        00    00                  000       000       00          0000        00              000        000
+    00        00    00                  000       000       00           0000       00              000       000
+    000000000000    0000000            000000000000000      00            0000      0000000         000000000000
+    000000000000    0000000            000000000000000      00            0000      0000000         000000000000
+    00        00    00                000           000     00            000       00              000     000
+    00        00    00                000           000     00           0000       00              000      000
+    00        00    00               000             000    00          0000        00              000       000
+    00        00    00               000             000    00         0000         00              000        000
+    00        00    000000000000    000               000   00000000000000          000000000000    000         000
+    00        00    000000000000    000               000   000000000000            000000000000    000          000
+
+-->
     <header>
         <div class="header-container p-0 m-0 d-flex w-100 justify-content-between">
             <img class="logo" src="../Assets/Media/Logo_principal.png" alt="Image de mon logo">
@@ -116,11 +132,7 @@
             <h1 class="w-100 text-center"><span class="main-color mr-5">Adrien </span>Soriano</h1>
             <div class="wrapper">
                 <h2 class="w-100 d-flex static-txt justify-content-center mt-5">Je suis
-                    <ul class="dynamic-txts">
-                        <li><span>développeur web et web mobile.</span></li>
-                        <li><span>développeur Full Stack.</span></li>
-                        <li><span>créateur d'articles de blog.</span></li>
-                    </ul>
+                    <span class="dynamic-txts txt-rotate color" data-period="2000" data-rotate='[ "développeur web et web mobile.", "développeur Full Stack.", "créateur d&apos;articles de blog.", "designer web."]'></span>
                 </h2>
             </div>
         </div>
@@ -130,12 +142,40 @@
 
     <main>
 
-        <section class="about d-flex flex-column align-items-center">
+
+
+
+        
+        <!--
+
+      000000000         000000000               0000000          000       000      00000000000000000
+      000000000         0000000000            00000000000        000       000      00000000000000000
+     000     000        000     000          000       000       000       000             000
+    000       000       000     000         000         000      000       000             000
+    000       000       000    000          000         000      000       000             000
+   000000000000000      0000000000          000         000      000       000             000
+   000000000000000      000000000000        000         000      000       000             000
+  000           000     000      0000       000         000      000       000             000
+  000           000     000       0000      000         000      000       000             000
+ 000             000    000       0000      000         000      000       000             000
+ 000             000    000       0000       000       000       0000     0000             000  
+000               000   0000000000000         00000000000         00000000000              000
+000               000   000000000000            0000000             0000000                000
+
+        -->
+
+
+
+
+
+
+        <section class="about d-flex flex-column align-items-center reveal">
 
             <h3 class="text-center fw-bold">À propos de <span class="main-color">moi</span> <img class="about-icon" src="../Assets/Media/About_icon.svg" alt=""></h3>
             <img class="separation" src="../Assets/Media/Separation.png" alt="">
             <h4 class="text-center fw-bold">Présentation</h4>
             <div class="container d-flex flex-column align-items-center">
+                <img class="w-75 mb-5" src="../Assets/Media/Wayne.jpg" alt="">
                 <h5 class="text-center w-75"><span class="main-color">Développeur web</span> situé à Besançon en Franche-Comté</h5>
                 <p class="p-3">Je suis un développeur web débutant, sortant tout juste d’une formation qualifiée bac+2 par le biais de Onlineformapro. Vous trouverez plus bas mon CV et mes compétences.</p>
                 <h5><span class="neon">Développeur web Full Stack</span></h5>
@@ -243,13 +283,39 @@
 
         </section>
 
-        <section class="projects d-flex flex-column align-items-center">
+
+
+
+
+
+        <!--
+
+            000000000000    000000000000            000000000
+            0000000000000   0000000000000         0000000000000
+            000       0000  000       0000       000         000
+            000       0000  000        0000     000           000
+            000      0000   000       0000      000           000
+            000000000000    000000000000        000           000
+            0000000000      00000000000         000           000
+            000             000      000        000           000
+            000             000       000        000         000
+            000             000        000        0000000000000
+            000             000         000         0000000000
+
+        -->
+
+
+
+
+
+
+        <section class="projects d-flex flex-column align-items-center reveal">
 
             <h3 class="pt-5"><img class="project-icon" src="../Assets/Media/Project_icon.svg" alt=""> <span class="main-color">Mes</span> projets</h3>
 
             <h4 class="p-5 mb-5">Voici quelques uns de <span class="main-color">mes projets</span>.</h4>
 
-            <div class="d-flex flex-column align-items-center mt-5">
+            <div class="contain d-flex flex-column align-items-center mt-5">
                 <img src="../Assets/Media/Projet_restaurant.png" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Projet restaurant</span></h6>
@@ -258,7 +324,7 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column align-items-center mt-5">
+            <div class="contain d-flex flex-column align-items-center mt-5">
                 <img src="../Assets/Media/Projet_github.png" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Projet Github search app</span></h6>
@@ -269,13 +335,37 @@
 
         </section>
 
-        <section class="lab d-flex flex-column align-items-center">
+
+
+
+<!--
+
+    000                    000000           0000000000
+    000                   00000000          00000000000
+    000                  000    000         000      000
+    000                 000      000        000      000
+    000                 0000000000000       00000000000
+    000                00000000000000       000000000000
+    000               000          000      000      0000
+    000              000            000     000       0000
+    000              000            000     000       0000
+    000000000000    000              000    0000000000000
+    000000000000    000              000    000000000000
+    
+
+-->
+
+
+
+
+
+        <section class="lab d-flex flex-column align-items-center reveal">
 
             <h3 class="pt-5">Labo<img class="lab-icon" src="../Assets/Media/Labo_icon.svg" alt=""></h3>
 
             <h4 class="p-5 mb-5">Projets d’experimentation <span class="main-color">personnels</span>.</h4>
 
-            <div class="d-flex flex-column align-items-center mt-5">
+            <div class="contain d-flex flex-column align-items-center mt-5">
                 <img src="../Assets/Media/Projet_ordercard.png" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Order card</span></h6>
@@ -284,8 +374,8 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column align-items-center mt-5">
-                <img src="../Assets/Media/Projet_ordercard.png" alt="">
+            <div class="contain d-flex flex-column align-items-center mt-5">
+                <img src="../Assets/Media/Projet_formulaire.png" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Formulaire de contact</span></h6>
                     <p class="descr-projet">Projet que j’ai créé dans le but d’apprendre à réaliser un envoie de mail via un form avec l’AJAX.</p>
@@ -296,34 +386,56 @@
 
         </section>
 
-        <section class="blog d-flex flex-column align-items-center">
+
+
+
+        <!--
+
+
+    0000000000          00                      0000000                 0000000000
+    00000000000         00                    00000000000              00       000
+    00       00         00                  000         000           000        00
+    00      000         00                  00           00           00 
+    0000000000          00                  00           00           00    
+    000000000           00                  00           00           00      000000
+    00      000         00                  00           00           00      000000
+    00       000        00                  00           00           00         000
+    00       000        00                  00           00           000        00
+    00000000000         00000000000000       0000000000000             00       000
+    0000000000          00000000000000         000000000                0000000000
+
+
+-->
+
+
+
+
+        <section class="blog d-flex flex-column align-items-center reveal">
 
             <h3 class="pt-5"><img class="blog-icon" src="../Assets/Media/Blog_icon.svg" alt="">Blog</h3>
 
             <h4 class="p-5 mb-5">Mes derniers <span class="main-color">articles de blog</span>.</h4>
 
-            <div class="d-flex flex-column align-items-center mt-5">
-                <div>
+            <div class="contain d-flex flex-column align-items-center mt-5">
+                <div class="d-flex flex-column align-items-center h-100">
                     <img src="../Assets/Media/Blog_tor.png" alt="">
-                    <div class="date-tor">
-                        <span class="date">23 mar, 22</span>
+                    <div class="date">
+                        <span>23 mar, 22</span>
                     </div>
-                </div>
-                    <div class="project d-flex flex-column align-items-center p-0 mt-2">
+                    <div class="project article d-flex flex-column align-items-center p-0 mt-2">
                         <h6 class="mb-4">Le projet Tor</h6>
                         <p class="descr-projet text-center">Qu’est-ce que Tor ?</p>
                             <p class="descr-projet text-center">Tor Project est un navigateur web composé de nœuds réseaux permettant de rendre anonyme la connexion TCP. Il permet donc une navigation anonyme et sécurisée pour obtenir autant de confidentialité que possible. TOR signifie The Onion Router (le routage en oignon) et permet de naviguer sur des sites en...</p>
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column align-items-center mt-5">
-                <div>
+            <div class="contain d-flex flex-column align-items-center mt-5">
+                <div class="d-flex flex-column align-items-center h-100">
                     <img src="../Assets/Media/Blog_python.png" alt="">
-                    <div class="date-python">
-                        <span class="date">15 mar, 22</span>
+                    <div class="date">
+                        <span>15 mar, 22</span>
                     </div>
-                </div>
-                    <div class="project d-flex flex-column align-items-center p-0 mt-2">
+                    <div class="project article d-flex flex-column align-items-center p-0 mt-2">
                         <h6 class="mb-4">Python</h6>
                         <p class="descr-projet text-center">Python, c’est quoi ?</p>
                             <p class="descr-projet text-center">Python est un langage de programmation open source et un langage dynamique. Son créateur, Guido Van, l’a créé en 1991. Son nom fait référence à la troupe de comédiens anglais, Monty Python. Au départ il ne fut pas très populaire, mais depuis le début des années 2000 son utilisation augmente...</p>
@@ -333,7 +445,89 @@
 
         </section>
 
-        <section class="contact">
+
+
+
+        <!--
+
+              000000000        000000000        000000        000   0000000000000000000
+             00000000000     0000000000000      0000000       000   0000000000000000000
+            000       000   000         000     000  000      000           000
+            000             000         000     000   000     000           000
+            000             000         000     000    000    000           000
+            000             000         000     000     000   000           000 
+            000             000         000     000      000  000           000
+            000      000    000         000     000       000 000           000 
+             0000000000      0000000000000      000        000000           000
+              00000000         000000000        000         00000           000
+        -->
+
+
+
+
+
+        <section class="contact d-flex flex-column align-items-center justify-content-center reveal">
+
+            <h3 class="pt-5"><span class="main-color">Me</span> contacter <img src="../Assets/Media/Contact_icon.svg" alt=""></h3>
+
+            <h4 class="p-5">Entrer en <span class="main-color">contact</span>.</h4>
+
+            <form class="d-flex flex-column align-items-center" action="" method="post">
+
+                
+                <input name="name" type="text" placeholder="Nom" autocomplete="off" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
+                <input name="mail" type="email" placeholder="E-mail" autocomplete="off" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" required>
+                <input name="sujet" type="text" placeholder="Sujet" autocomplete="off" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$" required>
+                <textarea name="message" type="text" placeholder="Message" autocomplete="off" cols="30" rows="10" pattern="[0-9a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$" required></textarea>
+                <button type="submit" class="btn submit fw-bold">Soumettre</button>
+
+            </form>
+
+            <div class="bg-custom p-2 pb-5 mb-5">
+
+                <h6 class="text-center p-5">Info de contact</h6>
+
+                <div class="p-2 pb-4 d-flex">
+
+                    <img src="../Assets/Media/Profil_icon.svg" alt="">
+                    <div class="p-2 d-flex flex-column">
+                        <p class="fw-bold m-0">Nom</p>
+                        <p class="m-0">Adrien Soriano</p>
+                    </div>
+
+                </div>
+
+                <div class="p-2 pb-4 d-flex">
+
+                    <img src="../Assets/Media/Location_icon.svg" alt="">
+                    <div class="p-2 d-flex flex-column">
+                        <p class="fw-bold m-0">Localisation</p>
+                        <p class="m-0">Besançon, France</p>
+                    </div>
+
+                </div>
+
+                <div class="p-2 pb-4 d-flex">
+
+                    <img src="../Assets/Media/phone_icon.svg" alt="">
+                    <div class="p-2 d-flex flex-column">
+                        <p class="fw-bold m-0">Tél</p>
+                        <p class="m-0">06.18.82.59.47</p>
+                    </div>
+
+                </div>
+
+                <div class="p-2 pb-5 d-flex">
+
+                    <img src="../Assets/Media/Mail_icon.svg" alt="">
+                    <div class="p-2 d-flex flex-column">
+                        <p class="fw-bold m-0">Email</p>
+                        <p class="m-0">adrien.soriano@gmail.com</p>
+                    </div>
+
+                </div>
+
+            </div>
 
 
         </section>
@@ -343,8 +537,8 @@
 
     </main>
     
-    <footer class="w-100 d-flex justify-content-around align-items-center flex-column">
-        <div class="w-75 d-flex justify-content-around align-items-center m-0 p-0">
+    <footer class="w-100 d-flex justify-content-around align-items-center flex-column reveal">
+        <div class="w-75 d-flex justify-content-around align-items-center ml-5 p-0">
             <a href="https://github.com/AdrienSoriano" target="_blank"><img src="../Assets/Media/Github_footer.svg" alt=""></a>
             <a href="https://www.linkedin.com/in/adrien-soriano-695b46a7/" target="_blank"><img src="../Assets/Media/Linkedin_footer.svg" alt=""></a>
             <a href="https://discord.gg/q2ZU8bvBSm" target="_blank"><img src="../Assets/Media/Discord_footer.svg" alt=""></a>
