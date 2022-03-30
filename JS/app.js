@@ -1,3 +1,5 @@
+
+
 const ratio = .1
 const options = {
     root: null,
@@ -76,3 +78,21 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+const form = document.querySelector('form');
+
+console.log(form);
+
+form.addEventListener('submit', e =>{
+    e.preventDefault();
+    const formData = new FormData(form);
+    console.log(formData);
+    fetch('../PHP/index.php', {
+        method: 'POST',
+        body: formData
+    }).then((response) =>{
+        return response.json()
+    }).then((data) =>{
+        console.log(data);
+        return form.reset();
+    })
+})
