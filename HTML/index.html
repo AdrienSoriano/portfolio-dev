@@ -17,10 +17,13 @@
     <title>Adrien Soriano - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/mobile-first.css">
+    <link rel="stylesheet" href="../CSS/tablette.css">
+    <link rel="stylesheet" href="../CSS/desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/ae29616080.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <!--
@@ -47,7 +50,7 @@
             <!--                                  NAVBAR                                   -->
 
 
-            <nav class="menu navbar navbar-expand-lg navbar-light">
+            <nav class="menu fixed-top navbar-b navbar-trans navbar navbar-expand-lg navbar-light w-100">
                 <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -93,7 +96,7 @@
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <button type="button" class="btn-close text-reset" id="close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body bg-image">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -126,13 +129,13 @@
 
         <!--                                MENU BURGER                    -->
 
-
+        <button onclick="topFunction()" title="retour en haut du site" id="go-top"><i class="fa-solid fa-circle-arrow-up"></i></button>
         <div class="container d-flex justify-content-center flex-column w-100">
 
             <h1 class="w-100 text-center"><span class="main-color mr-5">Adrien </span>Soriano</h1>
             <div class="wrapper">
                 <h2 class="w-100 d-flex static-txt justify-content-center mt-5">Je suis
-                    <span class="dynamic-txts txt-rotate color" data-period="2000" data-rotate='[ "développeur web et web mobile.", "développeur Full Stack.", "créateur d&apos;articles de blog.", "designer web."]'></span>
+                    <span class="dynamic-txts txt-rotate color" data-period="2000" data-rotate='[ "développeur web et web mobile.", "développeur Full Stack.", "créateur d&apos;articles de blog.", "designer web.", "sound designer et compositeur"]'></span>
                 </h2>
             </div>
         </div>
@@ -316,7 +319,7 @@
             <h4 class="p-5 mb-5">Voici quelques uns de <span class="main-color">mes projets</span>.</h4>
 
             <div class="contain d-flex flex-column align-items-center mt-5">
-                <img src="../Assets/Media/Projet_restaurant.png" alt="">
+                <img src="../Assets/Media/Projet_restaurant.png" class="w-100" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Projet restaurant</span></h6>
                     <p class="descr-projet">Projet d’étude consistant à mettre en place le site vitrine d’un restaurant avec un back-office. Les menus sont mis en place à l’aide d’une base de données.</p>
@@ -325,7 +328,7 @@
             </div>
 
             <div class="contain d-flex flex-column align-items-center mt-5">
-                <img src="../Assets/Media/Projet_github.png" alt="">
+                <img src="../Assets/Media/Projet_github.png" class="w-100" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Projet Github search app</span></h6>
                     <p class="descr-projet">Projet réalisé dans le cadre de ma formation. Le but était de créer un site et d’intégrer l’API de Github à celui-ci.</p>
@@ -366,7 +369,7 @@
             <h4 class="p-5 mb-5">Projets d’experimentation <span class="main-color">personnels</span>.</h4>
 
             <div class="contain d-flex flex-column align-items-center mt-5">
-                <img src="../Assets/Media/Projet_ordercard.png" alt="">
+                <img src="../Assets/Media/Projet_ordercard.png" class="w-100" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Order card</span></h6>
                     <p class="descr-projet">Projet consistant à mettre en place une carte de commande à l’aide d’une maquette donnée. Le but était de me familiariser avec Bootstrap.</p>
@@ -375,7 +378,7 @@
             </div>
 
             <div class="contain d-flex flex-column align-items-center mt-5">
-                <img src="../Assets/Media/Projet_formulaire.png" alt="">
+                <img src="../Assets/Media/Projet_formulaire.png" class="w-100" alt="">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Formulaire de contact</span></h6>
                     <p class="descr-projet">Projet que j’ai créé dans le but d’apprendre à réaliser un envoie de mail via un form avec l’AJAX.</p>
@@ -479,52 +482,56 @@
                 <input name="mail" type="email" placeholder="E-mail" autocomplete="off" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" required>
                 <input name="subject" type="text" placeholder="Sujet" autocomplete="off" pattern="[0-9a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$" required>
                 <textarea name="message" type="text" placeholder="Message" autocomplete="off" cols="30" rows="10" pattern="[0-9a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$" required></textarea>
+                <span class="main-color success p-4 fw-bold"></span>
                 <button type="submit" class="btn submit fw-bold">Soumettre</button>
 
             </form>
 
-            <div class="bg-custom p-2 pb-5 mb-5">
+            <div class="mt-5 bg-custom p-2 pb-5 mb-5">
 
                 <h6 class="text-center p-5">Info de contact</h6>
 
-                <div class="p-2 pb-4 d-flex">
+                <div class="d-flex flex-column justify-content-around">
 
-                    <img src="../Assets/Media/Profil_icon.svg" alt="">
-                    <div class="p-2 d-flex flex-column">
-                        <p class="fw-bold m-0">Nom</p>
-                        <p class="m-0">Adrien Soriano</p>
+                    <div class="p-2 pb-4 d-flex">
+
+                        <img src="../Assets/Media/Profil_icon.svg" alt="">
+                        <div class="p-2 d-flex flex-column">
+                            <p class="fw-bold m-0">Nom</p>
+                            <p class="m-0">Adrien Soriano</p>
+                        </div>
+
                     </div>
 
-                </div>
+                    <div class="p-2 pb-4 d-flex">
 
-                <div class="p-2 pb-4 d-flex">
+                        <img src="../Assets/Media/Location_icon.svg" alt="">
+                        <div class="p-2 d-flex flex-column">
+                            <p class="fw-bold m-0">Localisation</p>
+                            <p class="m-0">Besançon, France</p>
+                        </div>
 
-                    <img src="../Assets/Media/Location_icon.svg" alt="">
-                    <div class="p-2 d-flex flex-column">
-                        <p class="fw-bold m-0">Localisation</p>
-                        <p class="m-0">Besançon, France</p>
                     </div>
 
-                </div>
+                    <div class="p-2 pb-4 d-flex">
 
-                <div class="p-2 pb-4 d-flex">
+                        <img src="../Assets/Media/phone_icon.svg" alt="">
+                        <div class="p-2 d-flex flex-column">
+                            <p class="fw-bold m-0">Tél</p>
+                            <p class="m-0">06.18.82.59.47</p>
+                        </div>
 
-                    <img src="../Assets/Media/phone_icon.svg" alt="">
-                    <div class="p-2 d-flex flex-column">
-                        <p class="fw-bold m-0">Tél</p>
-                        <p class="m-0">06.18.82.59.47</p>
                     </div>
 
-                </div>
+                    <div class="p-2 pb-5 d-flex">
 
-                <div class="p-2 pb-5 d-flex">
+                        <img class="" src="../Assets/Media/Mail_icon.svg" alt="icone du mail">
+                        <div class="p-2 d-flex flex-column">
+                            <p class="fw-bold m-0">Email</p>
+                            <p class="m-0">adrien.soriano@gmail.com</p>
+                        </div>
 
-                    <img src="../Assets/Media/Mail_icon.svg" alt="">
-                    <div class="p-2 d-flex flex-column">
-                        <p class="fw-bold m-0">Email</p>
-                        <p class="m-0">adrien.soriano@gmail.com</p>
                     </div>
-
                 </div>
 
             </div>
@@ -538,11 +545,11 @@
     </main>
     
     <footer class="w-100 d-flex justify-content-around align-items-center flex-column reveal">
-        <div class="w-75 d-flex justify-content-around align-items-center ml-5 p-0">
-            <a href="https://github.com/AdrienSoriano" target="_blank"><img src="../Assets/Media/Github_footer.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/adrien-soriano-695b46a7/" target="_blank"><img src="../Assets/Media/Linkedin_footer.svg" alt=""></a>
-            <a href="https://discord.gg/q2ZU8bvBSm" target="_blank"><img src="../Assets/Media/Discord_footer.svg" alt=""></a>
-            <a href=""><img src="../Assets/Media/Facebook_footer.svg" alt=""></a>
+        <div class="w-75 d-flex flex-row justify-content-around align-items-center ">
+            <a href="https://github.com/AdrienSoriano" target="_blank"><img src="../Assets/Media/Github_footer.svg" alt="image du logo de Github"></a>
+            <a href="https://www.linkedin.com/in/adrien-soriano-695b46a7/" target="_blank"><img src="../Assets/Media/Linkedin_footer.svg" alt="image du logo de Linkedin"></a>
+            <a href="https://discord.gg/q2ZU8bvBSm" target="_blank"><img src="../Assets/Media/Discord_footer.svg" alt="image du logo de Discord"></a>
+            <a href=""><img src="../Assets/Media/Facebook_footer.svg" alt="image du logo de Facebook"></a>
         </div>
         <p class="w-100 text-center m-0 fw-bold">&copy; 2022 - Adrien Soriano</p>
 

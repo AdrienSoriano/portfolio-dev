@@ -1,0 +1,64 @@
+@media screen and (min-width: 800px){
+    html{
+        font-size: 16px;
+    }
+    .header-container{
+        width: 100%!important;
+        display: flex;
+    }
+    .menu{
+        width: 100%;
+        margin-left: 60%;
+        display: flex;
+    }
+    .navbar-b {
+        transition: all .5s ease-in-out;
+        background-color: transparent;
+        padding-top: 1.563rem;
+        padding-bottom: 1.563rem;
+    }
+    .burger{
+        display: none;
+        
+    }
+    .container-fluid{
+        width: 90%!important;
+    }
+    #go-top {
+        height: 8%;
+    }
+    .logo{
+        width: 15%;
+        height: 10%;
+    }
+    .blog .contain img{
+        width: 100%;
+    }
+    .date{
+        width: 30%;
+        top: -41px;
+        left: -35%;
+    }
+    .article{
+        margin-top: -7%!important;
+    }
+    .contact{
+        height: 100%;
+    }
+    form{
+        width: 75%;
+        height: 100%;
+    }
+    textarea{
+        height: 50%!important;
+    }
+    .bg-custom{
+        width: 67%;
+    }
+    footer img{
+        width: 70%;
+    }
+    footer{
+        height: 30vh!important;
+    }
+}

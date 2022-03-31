@@ -23,11 +23,47 @@ header{
     margin-left: 2%!important;
     margin-right: 2%!important;
 }
+#go-top {
+    display: none;
+    position: fixed;
+    width: 10%;
+    height: 5%;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #FB1B41;
+    color: #E4E3E3;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+  
+  #go-top:hover {
+    background-color: #FB4A68;
+  }
 .logo{
     width: 30%;
+    height: 8%;
+    position: absolute;
+    z-index: 2;
+    transition: all .4s ease;
+}
+header img:hover{
+    transform: rotate(45deg)!important;
 }
 .menu{
     display: none;
+}
+#offcanvasNavbar{
+    background-color: #2A2A2C!important;
+}
+#close{
+    background-color: #E4E3E3;
+}
+.btn-close{
+    fill: #E4E3E3!important;
 }
 .burger{
     display: flex;
@@ -264,13 +300,22 @@ input::placeholder, textarea::placeholder{
     background-size: cover;
     background-attachment: fixed;
 }
-.bg-custom p, .bg-custom h6{
+.bg-custom p{
+    color: #E4E3E3;
+    font-size: 1rem;
+}
+.bg-custom h6{
     color: #E4E3E3;
 }
 footer{
     background-color: #0E0E10;
     color: #E4E3E3;
     height: 15vh!important;
+}
+footer a{
+    margin: 0;
+    padding: 0;
+    width: auto!important;
 }
 footer img{
     width: 50%;

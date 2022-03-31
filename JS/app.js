@@ -1,4 +1,4 @@
-
+// Partie animation au scroll
 
 const ratio = .1
 const options = {
@@ -20,6 +20,9 @@ const observer = new IntersectionObserver(handleIntersect, options)
 document.querySelectorAll('.reveal').forEach(function (r){
     observer.observe(r)
 });
+
+
+// Partie animation du texte qui s'écrit et s'efface tout seul dans le header.
 
 let TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -78,8 +81,13 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-const form = document.querySelector('form');
 
+// Partie formulaire avec AJAX.
+
+
+const form = document.querySelector('form');
+const success = document.createTextNode('Votre mail a bien été envoyé');
+let span = document.querySelector('.success');
 console.log(form);
 
 form.addEventListener('submit', e =>{
@@ -93,6 +101,30 @@ form.addEventListener('submit', e =>{
         return response.json()
     }).then((data) =>{
         console.log(data);
+        span.appendChild(success)
         return form.reset();
+
     })
 })
+
+
+
+// Bouton qui permet de revenir en haut du site.
+
+
+let mybutton = document.getElementById("go-top");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

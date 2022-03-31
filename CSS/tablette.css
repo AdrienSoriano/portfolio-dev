@@ -1,0 +1,56 @@
+@media screen and (min-width: 500px){
+    html{
+        font-size: 16px;
+    }
+    .menu{
+        display: none;
+    }
+    .burger{
+        display: flex;
+    }
+    .burger ul li a{
+        color: #E4E3E3!important;
+        font-size: 3rem;
+        line-height: 200%;
+    }
+    .container-fluid{
+        width: 90%!important;
+    }
+    #go-top {
+        height: 8%;
+    }
+    .logo{
+        width: 30%;
+        height: 10%;
+    }
+    .blog .contain img{
+        width: 100%;
+    }
+    .date{
+        width: 30%;
+        top: -41px;
+        left: -35%;
+    }
+    .article{
+        margin-top: -7%!important;
+    }
+    .contact{
+        height: 100%;
+    }
+    form{
+        width: 75%;
+        height: 100%;
+    }
+    textarea{
+        height: 50%!important;
+    }
+    .bg-custom{
+        width: 67%;
+    }
+    footer img{
+        width: 70%;
+    }
+    footer{
+        height: 30vh!important;
+    }
+}
