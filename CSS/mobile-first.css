@@ -31,7 +31,7 @@ header{
     bottom: 5px;
     right: 5px;
     z-index: 99;
-    font-size: 30px;
+    font-size: 1.5rem;
     border: none;
     outline: none;
     background-color: #FB1B41;
@@ -94,7 +94,7 @@ h2{
     color: #E4E3E3;
     padding-left: 0;
     width: 100%!important;
-    font-size: 1.5rem!important;
+    font-size: 1.2rem!important;
     word-break: break-all;
 }
 .wrapper{
@@ -136,7 +136,7 @@ h5{
     color: #E4E3E3;
     background-color: #FB1B41;
     width: 50%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 5%;
     padding: 2%;
 }
@@ -202,7 +202,7 @@ h6{
     overflow: hidden;
     position: relative;
     transition: all .4s ease;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .projects button:hover, .lab button:hover{
     opacity: 1;
