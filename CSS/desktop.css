@@ -87,6 +87,7 @@
     }
     .projects div img{
         width: 40%!important;
+        align-items: flex-start;
     }
     .projects div div{
         width: 25%!important;
