@@ -20,8 +20,10 @@
         height: 8%;
     }
     .logo{
-        width: 30%;
-        height: 10%;
+        width: 50%;
+        height: 15%;
+        left: -120px;
+        top: -15px;
     }
     .blog .contain img{
         width: 100%;

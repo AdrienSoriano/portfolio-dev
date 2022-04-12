@@ -23,6 +23,10 @@ header{
     margin-left: 2%!important;
     margin-right: 2%!important;
 }
+.burger li a:hover{
+    color: #FB1B41!important;
+    font-weight: bold!important;
+}
 #go-top {
     display: none;
     position: fixed;
@@ -31,7 +35,7 @@ header{
     bottom: 5px;
     right: 5px;
     z-index: 99;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: none;
     outline: none;
     background-color: #FB1B41;
@@ -39,13 +43,15 @@ header{
     cursor: pointer;
     border-radius: 5%;
   }
-  
+  #go-top i{
+      margin-top: 19%;
+  }
   #go-top:hover {
     background-color: #FB4A68;
   }
 .logo{
     width: 30%;
-    height: 8%;
+    height: 10%;
     position: absolute;
     z-index: 2;
     transition: all .4s ease;
@@ -133,6 +139,8 @@ h5{
     text-shadow: 0px 0px 10px #5C93C9;
 }
 .download{
+    text-decoration: none!important;
+    outline: none!important;
     color: #E4E3E3;
     background-color: #FB1B41;
     width: 50%;
@@ -183,7 +191,7 @@ h5{
 h6{
     font-size: 2rem;
 }
-.projects button::before, .lab button::before{
+.project button::before, .lab .contain button::before{
     content: "";
     position: absolute;
     width: 0%;
@@ -195,7 +203,7 @@ h6{
     background: #c70039;
     transition: all .7s ease;
 }
-.projects button, .lab button{
+.project button, .lab .contain button{
     background: transparent;
     outline: none;
     border: 1.5px solid #FB1B41;
@@ -204,21 +212,46 @@ h6{
     transition: all .4s ease;
     font-size: 1.5rem;
 }
-.projects button:hover, .lab button:hover{
+.project button:hover, .lab .contain button:hover{
     opacity: 1;
     color:#E4E3E3;
 }
- .projects button:hover .index, .lab button:hover .index{
+ .project button:hover .index, .lab .contain button:hover .index{
      position: relative;
     z-index: 4;
     color: #E4E3E3;
 }
-.projects button:hover::before, .lab button:hover::before{
+.project button:hover::before, .lab .contain button:hover::before{
     opacity: 1;
     width: 120%;
 }
-.projects button, .lab button{
+.project button, .lab button{
     text-align: center;
+}
+.modal-content {
+    background-color: #0E0E10!important;
+}
+.modal i{
+    color: #E4E3E3!important;
+    z-index: 4!important;
+}
+.modal-header{
+    border-bottom: none!important;
+}
+.modal-body{
+    color: #E4E3E3!important;
+}
+.modal-footer{
+    border-top: none;
+}
+.modal-footer a button{
+    color: #FB1B41;
+    z-index: 4!important;
+    border: 1.5px solid #FB1B41;
+}
+.modal-footer a button:hover{
+    color: #E4E3E3!important;
+    z-index: 4!important;
 }
 .project {
     background-color: #0E0E10;
@@ -227,7 +260,7 @@ h6{
     width: 75%;
 }
 .contain img{
-    width: auto;
+    width: 100%;
 }
 .descr-projet{
     line-height: 25px;
@@ -245,6 +278,12 @@ h6{
 .about-icon{
     width: 7%;
 }
+.bloc-blog a{
+    text-decoration: none;
+}
+.article{
+    width: 100%;
+}
 .blog h6{
     color: #E4E3E3;
 }
@@ -255,7 +294,7 @@ h6{
     text-align: center;
     width: 50%;
     top: -37px;
-    left: -24.5%;
+    left: -25%;
     font-size: 2rem;
 }
 .article{
@@ -280,6 +319,9 @@ form input, form textarea{
     color: #E4E3E3;
     font-size: 1.5rem;
     align-items: flex-end;
+}
+textarea{
+    resize: none;
 }
 input::placeholder, textarea::placeholder{
     color: #C1C1C1;

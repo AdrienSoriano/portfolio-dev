@@ -17,6 +17,10 @@
         padding-top: 1.563rem;
         padding-bottom: 1.563rem;
     }
+    .menu li a:hover{
+        color: #FB1B41!important;
+        font-weight: bold!important;
+    }
     .burger{
         display: none;
         
@@ -24,14 +28,34 @@
     .container-fluid{
         width: 90%!important;
     }
+    h1{
+        font-size: 4rem!important;
+    }
+    h2{
+        font-size: 2rem!important;
+    } 
+    h2 span{
+        background: rgba(14, 14, 16, 0.5);
+    }
     #go-top {
-        height: 10%;
-        width: 6%;
+        height: 7%;
+        width: 4%;
+    }
+    #go-top i{
+        top: -16%;
+        position: relative;
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+        height: 100%;
     }
     .logo{
-        width: 15%;
-        height: 10%;
+        width: 20%;
+        height: 20%;
+        left: 0;
+        top: 0;
     }
+    
     .about-contain{
         width: 90%;
         flex-direction: row-reverse!important;
@@ -80,42 +104,123 @@
         text-align: center;
     }
     h3 img{
-        width: 12%!important;
+        width: 8%!important;
     }
-    .projects{
-        height: 100%;
+    .projects .contain, .lab .contain{
+        flex-direction: row!important;
+        justify-content: center!important;
+        width: 70%;
     }
-    .projects div img{
-        width: 40%!important;
+    .projects .project, .lab .project{
+        height: 250px;
+        width: 600px!important;
+        position: relative;
+        left: -2%;
+        top: 50px;
+        padding: 0!important;
+        align-items: flex-start!important;
+    }
+    .projects .project button, .lab .project button{
+        margin-left: 35%;
+        width: 29%;
+    }
+    .projects .contain h6, .projects .contain span, .lab .contain h6, .lab .contain span{
+        font-size: 1.8rem;
+        width: 100%;
+        margin-left: 2%!important;
+        margin-top: 2%!important;
+        margin-bottom: 2%!important;
+        padding: 0!important;
+        text-align: left!important;
+    }
+    .projects .descr-projet, .lab .descr-projet{
+        font-size: 1rem;
+        margin-left: 4%!important;
+        margin-bottom: 0!important;
+        padding-top: 2%!important;
+    }
+    .projects div img, .lab div img{
+        width: 50%!important;
+        height: 400px;
         align-items: flex-start;
     }
-    .projects div div{
-        width: 25%!important;
-        height: 10%!important;
-    }
-    .blog .contain img{
+    .bloc-blog a div{
         width: 100%;
     }
-    .date{
+    .bloc-blog{
+        flex-direction: row!important;
+        justify-content: space-evenly!important;
+        flex-wrap: wrap;
+        padding: 5%!important;
+    }
+    .projects .index, .lab .index{
+        font-size: 1rem!important;
+        width: 100%;
+    }
+    .bloc-blog .contain{
         width: 30%;
-        top: -41px;
-        left: -35%;
+        height: 45vh;
+        border-radius: 20px 20px 0 0!important;
+    }
+    .blog .contain p{
+        display: none;
+    }
+    .blog .contain img{
+        width: 99.5%!important;
+        border-radius: 10px 10px 0 0!important;
+    }
+    .date{
+        width: 30%!important;
+        top: -61px;
+        left: -179px;
+        font-size: 1.3rem;
+    }
+    .bloc-blog .contain:hover p{
+        display: block;
+        text-align: center!important;
+    }
+    .bloc-blog .contain:hover .date{
+        top: -327px!important;
+    }
+    .bloc-blog a:hover img{
+        opacity: 0.2;
+    }
+    .bloc-blog a:hover .article{
+        position: relative;
+        top: -327px;
+        margin: 0!important;
+        padding: 0!important;
     }
     .article{
-        margin-top: -7%!important;
+        margin-top: -12%!important;
+        border-radius: 0 0 10px 10px;
+    }
+    .article h6{
+        margin-top: 2%;
     }
     .contact{
         height: 100%;
     }
     form{
-        width: 75%;
+        width: 40%;
         height: 100%;
     }
     textarea{
         height: 50%!important;
     }
+    .contact div{
+        flex-direction: row!important;
+        justify-content: space-around!important;
+    }
     .bg-custom{
-        width: 67%;
+        height: 1100px;
+        width: 40%;
+    }
+    .bg-custom div{
+        flex-direction: column!important;
+    }
+    .bg-custom div img{
+        width: 10%;
     }
     footer img{
         width: 70%;
