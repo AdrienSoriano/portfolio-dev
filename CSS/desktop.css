@@ -139,6 +139,9 @@
         margin-bottom: 0!important;
         padding-top: 2%!important;
     }
+    .modal-body p{
+        margin-top: 5%;
+    }
     .projects div img, .lab div img{
         width: 50%!important;
         height: 400px;

@@ -235,6 +235,17 @@ h6{
     color: #E4E3E3!important;
     z-index: 4!important;
 }
+.projects ul li{
+    list-style: none;
+    margin-right: 3%;
+    margin-top: 3%;
+    background-color: #FB1B41;
+    padding: 0% 2%!important;
+    font-size: 1rem;
+    width:auto;
+    height:auto;
+    border-radius: 0px 15px 0 15px;
+}
 .modal-header{
     border-bottom: none!important;
 }
