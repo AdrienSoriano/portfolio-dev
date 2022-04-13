@@ -159,8 +159,9 @@
     }
     .bloc-blog .contain{
         width: 30%;
-        height: 45vh;
-        border-radius: 20px 20px 0 0!important;
+        height: 42vh;
+        border-radius: 10px 10px 0 0!important;
+        overflow: hidden;
     }
     .blog .contain p{
         display: none;
@@ -169,17 +170,43 @@
         width: 99.5%!important;
         border-radius: 10px 10px 0 0!important;
     }
+    .blog .contain:hover img{
+        -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        border-radius: 10px 10px 10px 10px!important;
+    }
     .date{
         width: 30%!important;
         top: -61px;
         left: -179px;
         font-size: 1.3rem;
     }
+    @-webkit-keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        100% {
+          -webkit-transform: scale(1.5);
+                  transform: scale(1.5);
+        }
+      }
+      @keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        100% {
+          -webkit-transform: scale(1.5);
+                  transform: scale(1.5);
+        }
+      }
+      
     .bloc-blog .contain:hover p{
         display: block;
         text-align: center!important;
-        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     }
     @-webkit-keyframes text-focus-in {
         0% {
@@ -207,8 +234,8 @@
       }
     .bloc-blog .contain:hover .article{
         
-        -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     @-webkit-keyframes shadow-drop-center {
         0% {
@@ -307,9 +334,6 @@
         width: 40%;
         height: 100%;
     }
-    textarea{
-        height: 50%!important;
-    }
     .contact div{
         flex-direction: row!important;
         justify-content: space-around!important;
@@ -326,6 +350,9 @@
     }
     footer img{
         width: 70%;
+    }
+    footer img:hover{
+        filter: drop-shadow(0 0 0.75rem #FB1B41);
     }
     footer{
         height: 30vh!important;
