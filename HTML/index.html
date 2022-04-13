@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adrien Soriano : Développeur web Portfolio">
+    <meta name="description" content="Bienvenue sur mon portfolio. Je m'appelle Adrien Soriano et je suis développeur web et web mobile Full Stack.">
 	<meta name="robots" content="index,follow">
     <meta name="author" content="Adrien Soriano">
-    <meta name="copyright" content="Adrien Soriano">
+    <meta name="copyright" content="© Adrien Soriano 2022">
+    <meta name="Language" CONTENT="fr" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="utf-8" />
+    <meta name="googlebot" content="index,follow,nosnippet" />
+    <meta name="google" content="notranslate,nositelinkssearchbox" />
+    <meta name="reply-to" content="adrien.soriano@gmail.com" />
+    <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="cache-control" content="no-cache">
-	<meta property="og:title" content="Portfolio">
-	<meta property="og:description" content="Adrien Soriano : Développeur web Portfolio">
-	<meta property="og:image" content="assets/media/logo.png">
+	<meta property="og:title" content="Adrien Soriano - Portfolio">
+	<meta property="og:description" content="Bienvenue sur mon portfolio. Je m'appelle Adrien Soriano et je suis développeur web et web mobile Full Stack.">
+	<meta property="og:image" content="https://adriens1010.promo-106.codeur.online/images/logo.png">
 	<meta property="og:site_name" content="Adrien Soriano">
     <link rel="icon" type="image/png" href="../Assets/Media/Favicon.png">
     <title>Adrien Soriano - Portfolio</title>
@@ -359,11 +366,29 @@
                                 <li>Github</li>
                             </ul>
                             <p>Projet d’étude consistant à mettre en place le site vitrine d’un restaurant avec un 
-                            back-office. Les menus sont mis en place à l’aide d’une base de données.</p>
+                            back-office. Les menus sont mis en place à l’aide d’une base de données. Le site contient également un formulaire de contact avec 
+                            envoie de mail. J'ai travaillé en binôme sur ce projet.</p>
+                            <p>J’ai effectué un benchmark sur plusieurs enseignes de fast-food pour conceptualiser le zoning, le 
+                                wireframe et la maquette du site sur Figma. J’ai ensuite commencé à intégrer le site en créant 
+                                plusieurs pages pour chaque catégorie de plats, une page d’accueil, une page pour le formulaire et 3 
+                                pages pour le back-office, une qui affiche le contenu de la base de donnée, une pour ajouter un élément
+                                 et une pour modifier un élément sélectionné. Pour l’intégration CSS de ce projet, j’ai opté pour le 
+                                 framework Boostrap.</p>
+                                 <p>Le header est composé d’un carrousel représentant le logo sur une bannière. La nav permet de se 
+                                     déplacer à travers toutes les pages du site. Le contenu de la page se trouve dans des balises
+                                      sections qui se trouvent elles-mêmes dans une balise main. Le footer est constitué d’un plan du
+                                       site ainsi que de boutons réseaux sociaux fonctionnels.</p>
+                            <p>J’ai réaliser un MCD avec MySQL Workbench pour créer les tables et ainsi faire la cardinalité entre 
+                                elles. Ensuite j’ai réalisé les tables sur PHPmyadmin et j’ai utilisé PHP pour remplir les données sur
+                                 le back-office depuis PHPmyadmin. J’ai effectué des requêtes SQL pour ajouter, modifier et supprimer 
+                                 des éléments dans la table principale.</p>
+                            <p>Le but de ce back-office est d’afficher en temps réel le contenu de la base de donnée sur le site. Le 
+                                bouton Ajouter permet d’ajouter un produit selon sa catégorie sur la page précisée. Le bouton Éditer 
+                                permet de modifier un élément de la base de donnée, son nom, son prix ou son image.</p>
                         </div>
                         <div class="modal-footer d-flex justify-content-around">
-                            <a href="https://github.com/AdrienSoriano/Restaurant" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal">Github</button></a>
-                            <a href="" target="_blank"><button type="button" class="btn">Voir le site</button></a>
+                            <a href="https://github.com/AdrienSoriano/Restaurant" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal"><i class="fa-brands fa-github"></i></button></a>
+                            <a href="" target="_blank"><button type="button" class="btn"><i class="fa-solid fa-link"></i></button></a>
                           </div>
                       </div>
                     </div>
@@ -385,14 +410,40 @@
                           <button type="button" class="btn-close d-flex justify-content-center align-items-center" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                         </div>
                         <div class="modal-body">
-                            <p>J’ai développé une application web permettant de rechercher des profils existants sur le site de Github en utilisant leur API.</p>
-                            <p>Je me suis basé sur la maquette qui nous a été donné sur Figma pour mettre en place la partie HTML et CSS. Sur ce projet, j’ai utilisé du SASS pour regrouper toutes les informations données sur la charte graphique.</p>
-                            <p>Technologies utilisées :</p>
-                            <p>Git, Github, Figma, HTML5, CSS3, SASS/SCSS, Javascript ES 6, API Github.</p>
+                            <ul class="d-flex justify-content-around flex-wrap w-100 p-0">
+                                <li>Figma</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Git</li>
+                                <li>Github</li>
+                            </ul>
+                            <p>J’ai développé une application web permettant de rechercher des profils existants sur le site de Github
+                                 en utilisant leur API.</p>
+                            <p>Je me suis basé sur la maquette qui nous a été donné sur Figma pour mettre en place la partie HTML et 
+                                CSS. Sur ce projet, j’ai utilisé du SASS pour regrouper toutes les informations données sur la charte 
+                                graphique.</p>
+                            <p>
+                                La partie Javascript a été utilisée pour mettre en place l’API et le thème sombre. Pour le thème 
+                                sombre, j’ai fait une fonction qui permet d’alterner d’un thème clair à un thème sombre au click d’une 
+                                div. Pour l’API, j’ai utilisé une requête AJAX avec fetch et ai récupéré les données en JSON pour 
+                                chercher les informations demandées sur la maquette. Il n’y a aucune partie Back-end sur ce projet.
+                            </p>
+                            <p>
+                                Le site se compose d’un titre, d’un bouton qui permet de passer du thème clair au thème sombre et 
+                                inversement, une section « recherche » où l’on peut chercher des utilisateurs Github et soit appuyer 
+                                sur le bouton « search », soit appuyer sur la touche entrer pour lancer la recherche. Pour ce qui est 
+                                du résultat, il se trouve dans une autre section. Il indique la photo de profil de la personne, son 
+                                pseudo, son username, sa date d’inscription, sa bio, le nombre de repos qu’il a créé, le nombre de 
+                                personnes qui le suivent, le nombre de personnes qu’il suit, son secteur d’activité, un lien vers son 
+                                twitter, l’url de son site web et le nom de son entreprise. Tout a été mit en place à l’aide de 
+                                Display : grid ; sur le CSS. J’ai également adapté la partie responsive du site pour les tablettes et 
+                                téléphones avec des @media dans le CSS.
+                            </p>
                         </div>
                         <div class="modal-footer d-flex justify-content-around">
-                            <a href="https://github.com/AdrienSoriano/GitHub-user-search-app" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal">Github</button></a>
-                            <a href="https://adriens1010.promo-106.codeur.online/devfinder/" target="_blank"><button type="button" class="btn">Voir le site</button></a>
+                            <a href="https://github.com/AdrienSoriano/GitHub-user-search-app" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal"><i class="fa-brands fa-github"></i></button></a>
+                            <a href="https://adriens1010.promo-106.codeur.online/devfinder/" target="_blank"><button type="button" class="btn"><i class="fa-solid fa-link"></i></button></a>
                           </div>
                       </div>
                     </div>
@@ -446,14 +497,21 @@
                       <button type="button" class="btn-close d-flex justify-content-center align-items-center" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                     <div class="modal-body">
+                        <ul class="d-flex justify-content-around flex-wrap w-100 p-0">
+                            <li>Figma</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>Git</li>
+                            <li>Github</li>
+                        </ul>
                         <p>J'ai développé cette page web en suivant une maquette donnée.</p>
-                        <p>La consigne était d'intégrer une maquette en utilisant le framework CSS. J'ai opté pour le framework Bootstrap 5.1 pour réaliser ce projet</p>
-                        <p>Technologies utilisées :</p>
-                        <p>Git, Github, Figma, HTML5, CSS3, SASS/SCSS, Javascript ES 6, API Github.</p>
+                        <p>La consigne était d'intégrer une maquette en utilisant le framework CSS. J'ai opté pour le framework 
+                            Bootstrap 5.1 pour réaliser ce projet, le but étant de me familiariser avec celui ci.</p>
                     </div>
                     <div class="modal-footer d-flex justify-content-around">
-                        <a href="https://github.com/AdrienSoriano/GitHub-user-search-app" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal">Github</button></a>
-                        <a href="https://adriens1010.promo-106.codeur.online/devfinder/" target="_blank"><button type="button" class="btn">Voir le site</button></a>
+                        <a href="https://github.com/AdrienSoriano/GitHub-user-search-app" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal"><i class="fa-brands fa-github"></i></button></a>
+                        <a href="https://adriens1010.promo-106.codeur.online/devfinder/" target="_blank"><button type="button" class="btn"><i class="fa-solid fa-link"></i></button></a>
                       </div>
                   </div>
                 </div>
@@ -471,18 +529,39 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h6 class="modal-title w-100 text-center" id="exampleModalLabel"><span class="main-color">Projet Github search app</span></h6>
+                      <h6 class="modal-title w-100 text-center" id="exampleModalLabel"><span class="main-color">Formulaire de contact</span></h6>
                       <button type="button" class="btn-close d-flex justify-content-center align-items-center" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                     <div class="modal-body">
-                        <p>J’ai développé une application web permettant de rechercher des profils existants sur le site de Github en utilisant leur API.</p>
-                        <p>Je me suis basé sur la maquette qui nous a été donné sur Figma pour mettre en place la partie HTML et CSS. Sur ce projet, j’ai utilisé du SASS pour regrouper toutes les informations données sur la charte graphique.</p>
-                        <p>Technologies utilisées :</p>
-                        <p>Git, Github, Figma, HTML5, CSS3, SASS/SCSS, Javascript ES 6, API Github.</p>
+                        <ul class="d-flex justify-content-around flex-wrap w-100 p-0">
+                            <li>Figma</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>Git</li>
+                            <li>Github</li>
+                        </ul>
+                        <p>J’ai réalisé ce projet à l’aide d’une maquette que j’ai moi même créée. Le but de ce projet était avant 
+                            tout de commencer à toucher à la partie Back-end, mais également de valider des étapes Front-end.</p>
+                        <p>J’ai donc commencé par faire un benchmark de plusieurs formulaires, m’en suis inspiré et ai fait des
+                             zonings, des wireframes, une charte graphique et des maquettes sur Figma. Une fois la maquette terminée,
+                              j’ai commencé l’intégration du site web en structurant le fichier HTML, puis en implémentant le CSS tout
+                               en suivant ma charte graphique.</p>
+                        <p>Le formulaire contient plusieurs champs, tous fonctionnels. J’ai créé un algorithme permettant d’effectuer
+                             un envoie de mail via Javascript et PHP à l’aide du JSON et de l’AJAX.</p>
+                        <p>Le site comprend un titre principal, un bouton qui permet de passer du thème clair au thème sombre et
+                             inversement ainsi que de 5 champs (tous obligatoires), un input prénom, un input nom, un input e-mail,
+                              un input sujet et un input message. Les mesures de sécurité obligent l’utilisateur à remplir les champs 
+                              demandés, sinon une erreur s’affichera à l’écran indiquant les champs incomplets en rouge ainsi qu’un 
+                              message demandant de bien remplir le formulaire. Si tous les champs sont bien remplis, un message de 
+                              confirmation apparaît disant que la demande a bien été envoyée et les champs se réinitialisent. </p>
                     </div>
                     <div class="modal-footer d-flex justify-content-around">
-                        <a href="https://github.com/AdrienSoriano/Formulaire_de_contact" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal">Github</button></a>
-                        <a href="https://adriens1010.promo-106.codeur.online/formulaire/" target="_blank"><button type="button" class="btn">Voir le site</button></a>
+                        <a href="https://github.com/AdrienSoriano/Formulaire_de_contact" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal"><i class="fa-brands fa-github"></i></button></a>
+                        <a href="https://adriens1010.promo-106.codeur.online/formulaire/" target="_blank"><button type="button" class="btn"><i class="fa-solid fa-link"></i></button></a>
                       </div>
                   </div>
                 </div>

@@ -208,11 +208,11 @@
     .bloc-blog .contain:hover p{
         display: block;
         text-align: center!important;
-        -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     }
     @-webkit-keyframes text-focus-in {
-        0% {
+        0%, 70% {
           -webkit-filter: blur(12px);
                   filter: blur(12px);
           opacity: 0;
@@ -224,7 +224,7 @@
         }
       }
       @keyframes text-focus-in {
-        0% {
+        0%, 70% {
           -webkit-filter: blur(12px);
                   filter: blur(12px);
           opacity: 0;

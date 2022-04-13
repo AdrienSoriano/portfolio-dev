@@ -150,6 +150,7 @@ h5{
 }
 .progress{
     border-radius: 20px;
+    box-shadow: 5px 5px 4px #0E0E10;
 }
 .progress-bar{
     background-color: #FB1B41;
@@ -235,7 +236,7 @@ h6{
     color: #E4E3E3!important;
     z-index: 4!important;
 }
-.projects ul li{
+.projects ul li, .lab ul li{
     list-style: none;
     margin-right: 3%;
     margin-top: 3%;
@@ -255,15 +256,24 @@ h6{
 .modal-footer{
     border-top: none;
 }
-.modal-footer a button{
-    color: #FB1B41;
+.modal-footer a button i{
+    color: #FB1B41!important;
     z-index: 4!important;
-    border: 1.5px solid #FB1B41;
+    font-size: 3rem;
 }
-.modal-footer a button:hover{
-    color: #E4E3E3!important;
+.modal-footer a button:hover i{
+    color: #fa5974!important;
     z-index: 4!important;
+    animation-duration: 2s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
 }
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0.5; }
+    100% { opacity:1; }
+  }
 .project {
     background-color: #0E0E10;
 }
@@ -352,6 +362,7 @@ input::placeholder, textarea::placeholder{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 5px 5px 4px #0E0E10;
 }
 .bg-custom p{
     color: #E4E3E3;
