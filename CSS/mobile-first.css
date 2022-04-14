@@ -150,7 +150,6 @@ h5{
 }
 .progress{
     border-radius: 20px;
-    box-shadow: 5px 5px 4px #0E0E10;
 }
 .progress-bar{
     background-color: #FB1B41;
@@ -323,15 +322,15 @@ h6{
 }
 form{
     width: 100%;
+    height: 70vh;
 }
 form input, form textarea{
     width: 90%;
-    padding-top: 4%;
+    padding-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
     margin-top: 5%;
-    height: 100%;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -341,8 +340,12 @@ form input, form textarea{
     font-size: 1.5rem;
     align-items: flex-end;
 }
-textarea{
+form input{
+    height: 20%;
+}
+form textarea{
     resize: none;
+    height: 100%;
 }
 input::placeholder, textarea::placeholder{
     color: #C1C1C1;

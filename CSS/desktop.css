@@ -178,12 +178,6 @@
         animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         border-radius: 10px 10px 10px 10px!important;
     }
-    .date{
-        width: 30%!important;
-        top: -61px;
-        left: -179px;
-        font-size: 1.3rem;
-    }
     @-webkit-keyframes scale-up-center {
         0% {
           -webkit-transform: scale(1);
@@ -204,7 +198,39 @@
                   transform: scale(1.5);
         }
       }
-      
+      .blog .contain:not(:hover) img{
+        -webkit-animation: scale-down-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-down-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        border-radius: 10px 10px 10px 10px!important;
+    }
+    @-webkit-keyframes scale-down-center {
+        0%, 70% {
+          -webkit-transform: scale(1.5);
+                  transform: scale(1.5);
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        
+      }
+      @keyframes scale-down-center {
+          0%, 70% {
+          -webkit-transform: scale(1.5);
+                  transform: scale(1.5);
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        
+      }
+    .date{
+        width: 30%!important;
+        top: -61px;
+        left: -179px;
+        font-size: 1.3rem;
+    }
     .bloc-blog .contain:hover p{
         display: block;
         text-align: center!important;
@@ -284,6 +310,32 @@
                   transform: translateY(-267px);
         }
       }
+      .bloc-blog .contain:not(:hover) .date{
+        -webkit-animation: slide-to-down 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-to-down 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    @-webkit-keyframes slide-to-down {
+        100% {
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px);
+        }
+        50%, 0% {
+          -webkit-transform: translateY(-267px);
+                  transform: translateY(-267px);
+        }
+        
+      }
+      @keyframes slide-to-down {
+          100% {
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px);
+        }
+        50%, 0% {
+          -webkit-transform: translateY(-267px);
+                  transform: translateY(-267px);
+        }
+        
+      }
     .bloc-blog .contain:hover .article{
         -webkit-animation: slide-to-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: slide-to-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -312,10 +364,35 @@
                     height: 357px;
           }
       }
-
-    .bloc-blog a:hover img{
-        opacity: 0.2;
+      .bloc-blog .contain:not(:hover) .article{
+        -webkit-animation: slide-down 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-down 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+    @-webkit-keyframes slide-down {
+        100% {
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px);
+                  height: 367px;
+        }
+        50%, 0% {
+          -webkit-transform: translateY(-267px);
+                  transform: translateY(-267px);
+                  height: 367px;
+        }
+      }
+      @keyframes slide-down {
+          100% {
+            -webkit-transform: translateY(0px);
+                    transform: translateY(0px);
+                    height: 367px;
+          }
+        50%, 0% {
+            -webkit-transform: translateY(-267px);
+                    transform: translateY(-267px);
+                    height: 367px;
+          }
+          
+      }
     .bloc-blog a:hover .article{
         position: relative;
         top: -277px;
@@ -335,14 +412,20 @@
     }
     form{
         width: 40%;
-        height: 100%;
     }
     .contact div{
         flex-direction: row!important;
         justify-content: space-around!important;
     }
+    .contact div div div div{
+        flex-direction: row!important;
+        justify-content: flex-start!important;
+    }
+    .contact div div div div div{
+        flex-direction: column!important;
+    }
     .bg-custom{
-        height: 1100px;
+        height: 105vh;
         width: 40%;
     }
     .bg-custom div{
@@ -355,7 +438,7 @@
         width: 70%;
     }
     footer img:hover{
-        filter: drop-shadow(0 0 0.75rem #FB1B41);
+        filter: drop-shadow(0 0 0.30rem #FB1B41);
     }
     footer{
         height: 30vh!important;
