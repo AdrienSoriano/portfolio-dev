@@ -128,4 +128,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
+/* let url = 'https://mediumpostapi.herokuapp.com/?usermedium=@a.soriano'
+fetch(url)
+.then((resp) => resp.json())
+.then((data) => {
+    console.log(data);
+}) */

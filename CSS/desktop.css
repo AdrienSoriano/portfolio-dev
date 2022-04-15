@@ -231,7 +231,11 @@
         left: -179px;
         font-size: 1.3rem;
     }
-    .bloc-blog .contain:hover p{
+    .bloc-blog .contain:not(:hover) p{
+        display: block;
+        text-align: center!important;
+    }
+      .bloc-blog .contain:hover p{
         display: block;
         text-align: center!important;
         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -359,8 +363,8 @@
                     height: 108px;
           }
           100% {
-            -webkit-transform: translateY(-50px);
-                    transform: translateY(-50px);
+            -webkit-transform: translateY(-52px);
+                    transform: translateY(-52px);
                     height: 357px;
           }
       }
