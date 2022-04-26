@@ -30,8 +30,8 @@ header{
 #go-top {
     display: none;
     position: fixed;
-    width: 10%;
-    height: 5%;
+    width: 10vw;
+    height: 10vw;
     bottom: 5px;
     right: 5px;
     z-index: 99;
@@ -323,6 +323,7 @@ h6{
 form{
     width: 100%;
     height: 70vh;
+    position: relative;
 }
 form input, form textarea{
     width: 90%;
@@ -341,11 +342,11 @@ form input, form textarea{
     align-items: flex-end;
 }
 form input{
-    height: 20%;
+    height: 7vh;
 }
 form textarea{
     resize: none;
-    height: 100%;
+    height: 40vh;
 }
 input::placeholder, textarea::placeholder{
     color: #C1C1C1;

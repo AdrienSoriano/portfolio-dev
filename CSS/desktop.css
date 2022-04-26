@@ -38,11 +38,11 @@
         background: rgba(14, 14, 16, 0.5);
     }
     #go-top {
-        height: 7%;
-        width: 4%;
+        height: 4vw;
+        width: 4vw;
     }
     #go-top i{
-        top: -16%;
+        top: -6%;
         position: relative;
         font-size: 3rem;
         text-align: center;

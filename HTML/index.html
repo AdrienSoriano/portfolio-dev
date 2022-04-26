@@ -34,7 +34,8 @@
 </head>
 <body>
     
-    
+    <!--                                  NAVBAR                                   -->
+
     <nav class="menu fixed-top navbar-b navbar-trans navbar navbar-expand-lg navbar-light w-100">
                 <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,8 +66,8 @@
                 </div>
             </nav>
 
-
             <!--                                  NAVBAR                                   -->
+            
 
 
             <!--                                 MENU BURGER                               -->
@@ -110,6 +111,7 @@
                 </div>
             </nav>
 
+            <!--                                MENU BURGER                    -->
 
 <!--
 
@@ -128,19 +130,20 @@
     00        00    000000000000    000               000   000000000000            000000000000    000          000
 
 -->
-    <header>
+    <header data-spy>
+
+        <!-- Logo en haut à gauche de la page -->
+
         <div class="header-container p-0 m-0 d-flex w-100 justify-content-between">
-            <img class="logo" src="../Assets/Media/Logo_principal.svg" alt="Image de mon logo">
 
-            <!--                                  NAVBAR                                   -->
+            <img class="logo" src="../Assets/Media/Logo_principal.svg" alt="Logo de la page">
 
-
-            
         </div>
 
+        <!-- Logo en haut à gauche de la page -->
+        
 
-        <!--                                MENU BURGER                    -->
-
+        <!-- Prénom et Nom suivi d'un texte en rotate -->
         
         <div class="container d-flex justify-content-center flex-column w-100">
 
@@ -151,7 +154,14 @@
                 </h2>
             </div>
         </div>
+
+        <!-- Prénom et Nom suivi d'un texte en rotate -->
+
+        <!-- bouton qui permet de revenir en haut de page -->
+
         <button onclick="topFunction()" title="retour en haut du site" id="go-top"><i class="fa-solid fa-circle-arrow-up"></i></button>
+
+        <!-- bouton qui permet de revenir en haut de page -->
         
     </header>
     
@@ -184,14 +194,14 @@
 
 
 
-        <section id="about" class="about d-flex flex-column align-items-center reveal">
+        <section id="about" class="about d-flex flex-column align-items-center reveal" data-spy>
             
             
-            <h3 class="text-center fw-bold">À propos de <span class="main-color">moi</span> <img class="about-icon" src="../Assets/Media/About_icon.svg" alt=""></h3>
-            <img class="separation" src="../Assets/Media/Separation.png" alt="">
+            <h3 class="text-center fw-bold">À propos de <span class="main-color">moi</span> <img class="about-icon" src="../Assets/Media/About_icon.svg" alt="Icone pour la section 'à propos'."></h3>
+            <img class="separation" src="../Assets/Media/Separation.png" alt="Séparation entre le titre et le sous-titre.">
             <h4 class="text-center fw-bold">Présentation</h4>
             <div class="about-contain container d-flex flex-column align-items-center">
-                <img class="w-75 mb-5" src="../Assets/Media/Wayne.jpg" alt="">
+                <img class="w-75 mb-5" src="../Assets/Media/Wayne.jpg" alt="Photo de profil.">
                 <div class="bloc-about d-flex flex-column align-items-center">
                     <h5 class="text-center w-75"><span class="main-color">Développeur web</span> situé à Besançon en Franche-Comté</h5>
                     <p class="p-3">Je suis un développeur web débutant, sortant tout juste d’une formation qualifiée bac+2 par le biais de Onlineformapro. Vous trouverez plus bas mon CV et mes compétences.</p>
@@ -332,14 +342,14 @@
 
 
 
-        <section id="projects" class="projects d-flex flex-column align-items-center reveal">
+        <section id="projects" class="projects d-flex flex-column align-items-center reveal" data-spy>
 
-            <h3 class="pt-5"><img class="project-icon" src="../Assets/Media/Project_icon.svg" alt=""> <span class="main-color">Mes</span> projets</h3>
+            <h3 class="pt-5"><img class="project-icon" src="../Assets/Media/Project_icon.svg" alt="Icone pour la section 'projets'"> <span class="main-color">Mes</span> projets</h3>
 
             <h4 class="p-5 mb-5">Voici quelques uns de <span class="main-color">mes projets</span>.</h4>
 
                 <div class="contain d-flex flex-column align-items-center mt-5">
-                    <img src="../Assets/Media/Projet_restaurant.png" class="w-100" alt="capture d'écran du site web projet restaurant">
+                    <img src="../Assets/Media/Projet_restaurant.png" class="w-100" alt="Capture d'écran du site web projet restaurant.">
                     <div class="project d-flex flex-column align-items-center p-5">
                         <h6 class="mb-4"><span class="main-color">Projet restaurant</span></h6>
                         <p class="descr-projet">Projet d’étude consistant à mettre en place le site vitrine d’un restaurant avec un back-office. Les menus sont mis en place à l’aide d’une base de données.</p>
@@ -395,7 +405,7 @@
                   </div>
 
                 <div class="contain d-flex flex-column align-items-center mt-5">
-                    <img src="../Assets/Media/Projet_github.png" class="w-100" alt="capture d'écran du site web projet github">
+                    <img src="../Assets/Media/Projet_github.png" class="w-100" alt="Capture d'écran du site web projet github.">
                     <div class="project d-flex flex-column align-items-center p-5">
                         <h6 class="mb-4"><span class="main-color">Projet Github search app</span></h6>
                         <p class="descr-projet">Projet réalisé dans le cadre de ma formation. Le but était de créer un site et d’intégrer l’API de Github à celui-ci.</p>
@@ -475,14 +485,14 @@
 
 
 
-        <section id="lab" class="lab d-flex flex-column align-items-center reveal">
+        <section id="lab" class="lab d-flex flex-column align-items-center reveal" data-spy>
 
-            <h3 class="pt-5">Labo<img class="lab-icon" src="../Assets/Media/Labo_icon.svg" alt=""></h3>
+            <h3 class="pt-5">Labo<img class="lab-icon" src="../Assets/Media/Labo_icon.svg" alt="Icone de la section 'labo'"></h3>
 
             <h4 class="p-5 mb-5">Projets d’experimentation <span class="main-color">personnels</span>.</h4>
 
             <div class="contain d-flex flex-column align-items-center mt-5">
-                <img src="../Assets/Media/Projet_ordercard.png" class="w-100" alt="">
+                <img src="../Assets/Media/Projet_ordercard.png" class="w-100" alt="Capture d'écran du lab order card.">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Order card</span></h6>
                     <p class="descr-projet">Projet consistant à mettre en place une carte de commande à l’aide d’une maquette donnée. Le but était de me familiariser avec Bootstrap.</p>
@@ -518,7 +528,7 @@
               </div>
 
             <div class="contain d-flex flex-column align-items-center mt-5">
-                <img src="../Assets/Media/Projet_formulaire.png" class="w-100" alt="">
+                <img src="../Assets/Media/Projet_formulaire.png" class="w-100" alt="Capture d'écran du lab formulaire.">
                 <div class="project d-flex flex-column align-items-center p-5">
                     <h6 class="mb-4"><span class="main-color">Formulaire de contact</span></h6>
                     <p class="descr-projet">Projet que j’ai créé dans le but d’apprendre à réaliser un envoie de mail via un form avec l’AJAX.</p>
@@ -594,9 +604,9 @@
 
 
 
-        <section id="blog" class="blog d-flex flex-column align-items-center reveal">
+        <section id="blog" class="blog d-flex flex-column align-items-center reveal" data-spy>
 
-            <h3 class="pt-5"><img class="blog-icon" src="../Assets/Media/Blog_icon.svg" alt="">Blog</h3>
+            <h3 class="pt-5"><img class="blog-icon" src="../Assets/Media/Blog_icon.svg" alt="Icone de la section 'blog'">Blog</h3>
 
             <h4 class="p-5 mb-5">Mes derniers <span class="main-color">articles de blog</span>.</h4>
 
@@ -606,7 +616,7 @@
                         <div>
                             <div class="d-flex flex-column align-items-center">
                               
-                                    <img src="../Assets/Media/Blog_mao.png" alt="">
+                                    <img src="../Assets/Media/Blog_mao.png" alt="Image utilisée pour ">
                                
                                 
                                 <div class="date">
@@ -715,7 +725,7 @@
 
 
 
-        <section id="contact" class="contact d-flex flex-column align-items-center justify-content-center reveal">
+        <section id="contact" class="contact d-flex flex-column align-items-center justify-content-center reveal" data-spy>
 
             <h3 class="pt-5"><span class="main-color">Me</span> contacter <img src="../Assets/Media/Contact_icon.svg" alt=""></h3>
 
