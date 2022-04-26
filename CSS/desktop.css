@@ -42,7 +42,7 @@
         width: 4vw;
     }
     #go-top i{
-        top: -6%;
+        top: -5%;
         position: relative;
         font-size: 3rem;
         text-align: center;
@@ -73,6 +73,9 @@
     }
     .bloc-about p{
         padding-left: 0!important;
+    }
+    .download:hover{
+        background-color: #fc506d;
     }
     .skills{
         margin-top: 3%;
@@ -438,13 +441,26 @@
     .bg-custom div img{
         width: 10%;
     }
-    footer img{
-        width: 70%;
+    footer i{
+        font-size: 4rem;
     }
-    footer img:hover{
+    footer i:hover, footer p:hover{
         filter: drop-shadow(0 0 0.30rem #FB1B41);
     }
     footer{
         height: 30vh!important;
     }
+    body::-webkit-scrollbar {
+        width: 5px; /* width of the entire scrollbar */
+      }
+      
+      body::-webkit-scrollbar-track {
+        background: #2A2A2C
+        ; /* color of the tracking area */
+      }
+      
+      body::-webkit-scrollbar-thumb {
+        background-color: #FB1B41; /* color of the scroll thumb */
+        border-radius: 20px; /* roundness of the scroll thumb */
+      }
 }

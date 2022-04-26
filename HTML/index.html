@@ -9,13 +9,9 @@
     <meta name="author" content="Adrien Soriano">
     <meta name="copyright" content="© Adrien Soriano 2022">
     <meta name="Language" CONTENT="fr" />
-    <meta http-equiv="Content-Type" content="text/html" />
-    <meta charset="utf-8" />
     <meta name="googlebot" content="index,follow,nosnippet" />
     <meta name="google" content="notranslate,nositelinkssearchbox" />
     <meta name="reply-to" content="adrien.soriano@gmail.com" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="cache-control" content="no-cache">
 	<meta property="og:title" content="Adrien Soriano - Portfolio">
 	<meta property="og:description" content="Bienvenue sur mon portfolio. Je m'appelle Adrien Soriano et je suis développeur web et web mobile Full Stack.">
 	<meta property="og:image" content="https://adriens1010.promo-106.codeur.online/images/logo.png">
@@ -206,7 +202,7 @@
                     <h5 class="text-center w-75"><span class="main-color">Développeur web</span> situé à Besançon en Franche-Comté</h5>
                     <p class="p-3">Je suis un développeur web débutant, sortant tout juste d’une formation qualifiée bac+2 par le biais de Onlineformapro. Vous trouverez plus bas mon CV et mes compétences.</p>
                     <h5><span class="neon">Développeur web Full Stack</span></h5>
-                    <a class="d-flex justify-content-center text-decoration-none w-100" role="button" target="_blank" href="https://adriens1010.promo-106.codeur.online/assets/CV_AdrienSoriano.pdf" download="CV_AdrienSoriano.pdf"><button type="button" class="btn fw-bold download">Télécharger CV</button></a>
+                    <a class="btn fw-bold download d-flex justify-content-center text-decoration-none w-100" role="button" target="_blank" href="https://adriens1010.promo-106.codeur.online/assets/CV_AdrienSoriano.pdf" download="CV_AdrienSoriano.pdf">Télécharger CV</a>
                 </div>
             </div>
 
@@ -346,21 +342,21 @@
 
             <h3 class="pt-5"><img class="project-icon" src="../Assets/Media/Project_icon.svg" alt="Icone pour la section 'projets'"> <span class="main-color">Mes</span> projets</h3>
 
-            <h4 class="p-5 mb-5">Voici quelques uns de <span class="main-color">mes projets</span>.</h4>
+            <h4 class="p-5 mb-5">Voici quelques uns de <span class="main-color">mes projets</span></h4>
 
                 <div class="contain d-flex flex-column align-items-center mt-5">
                     <img src="../Assets/Media/Projet_restaurant.png" class="w-100" alt="Capture d'écran du site web projet restaurant.">
                     <div class="project d-flex flex-column align-items-center p-5">
-                        <h6 class="mb-4"><span class="main-color">Projet restaurant</span></h6>
+                        <h6 class="mb-4" id="projet-restaurant"><span class="main-color">Projet restaurant</span></h6>
                         <p class="descr-projet">Projet d’étude consistant à mettre en place le site vitrine d’un restaurant avec un back-office. Les menus sont mis en place à l’aide d’une base de données.</p>
                         <button type="button" class="btn mt-3" data-bs-toggle="modal" data-bs-target="#restaurant"><span class="main-color index">Plus de détails</span></button>
                     </div>
                 </div>
-                <div class="modal fade" id="restaurant" tabindex="-1" aria-labelledby="Projet de site vitrine restaurant" aria-hidden="true">
+                <div class="modal fade" id="restaurant" tabindex="-1" aria-labelledby="projet-restaurant" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h6 class="modal-title w-100 text-center" id="exampleModalLabel"><span class="main-color">Projet restaurant</span></h6>
+                          <h6 class="modal-title w-100 text-center"><span class="main-color">Projet restaurant</span></h6>
                           <button type="button" class="btn-close d-flex justify-content-center align-items-center" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                         </div>
                         <div class="modal-body">
@@ -397,8 +393,8 @@
                                 permet de modifier un élément de la base de donnée, son nom, son prix ou son image.</p>
                         </div>
                         <div class="modal-footer d-flex justify-content-around">
-                            <a href="https://github.com/AdrienSoriano/Restaurant" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal"><i class="fa-brands fa-github"></i></button></a>
-                            <a href="" target="_blank"><button type="button" class="btn"><i class="fa-solid fa-link"></i></button></a>
+                            <a href="https://github.com/AdrienSoriano/Restaurant" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="btn" target="_blank"><i class="fa-solid fa-link"></i></a>
                           </div>
                       </div>
                     </div>
@@ -407,16 +403,16 @@
                 <div class="contain d-flex flex-column align-items-center mt-5">
                     <img src="../Assets/Media/Projet_github.png" class="w-100" alt="Capture d'écran du site web projet github.">
                     <div class="project d-flex flex-column align-items-center p-5">
-                        <h6 class="mb-4"><span class="main-color">Projet Github search app</span></h6>
+                        <h6 class="mb-4" id="github-search"><span class="main-color">Projet Github search app</span></h6>
                         <p class="descr-projet">Projet réalisé dans le cadre de ma formation. Le but était de créer un site et d’intégrer l’API de Github à celui-ci.</p>
                         <button type="button" class="btn mt-3" data-bs-toggle="modal" data-bs-target="#api-github"><span class="main-color index">Plus de détails</span></button>
                     </div>
                 </div>
-                <div class="modal fade" id="api-github" tabindex="-1" aria-labelledby="Projet de l'API Github" aria-hidden="true">
+                <div class="modal fade" id="api-github" tabindex="-1" aria-labelledby="github-search" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h6 class="modal-title w-100 text-center" id="exampleModalLabel"><span class="main-color">Projet Github search app</span></h6>
+                          <h6 class="modal-title w-100 text-center"><span class="main-color">Projet Github search app</span></h6>
                           <button type="button" class="btn-close d-flex justify-content-center align-items-center" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                         </div>
                         <div class="modal-body">
@@ -452,8 +448,8 @@
                             </p>
                         </div>
                         <div class="modal-footer d-flex justify-content-around">
-                            <a href="https://github.com/AdrienSoriano/GitHub-user-search-app" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal"><i class="fa-brands fa-github"></i></button></a>
-                            <a href="https://adriens1010.promo-106.codeur.online/devfinder/" target="_blank"><button type="button" class="btn"><i class="fa-solid fa-link"></i></button></a>
+                            <a href="https://github.com/AdrienSoriano/GitHub-user-search-app" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://adriens1010.promo-106.codeur.online/devfinder/" class="btn" target="_blank"><i class="fa-solid fa-link"></i></a>
                           </div>
                       </div>
                     </div>
@@ -489,21 +485,21 @@
 
             <h3 class="pt-5">Labo<img class="lab-icon" src="../Assets/Media/Labo_icon.svg" alt="Icone de la section 'labo'"></h3>
 
-            <h4 class="p-5 mb-5">Projets d’experimentation <span class="main-color">personnels</span>.</h4>
+            <h4 class="p-5 mb-5">Projets d’experimentation <span class="main-color">personnels</span></h4>
 
             <div class="contain d-flex flex-column align-items-center mt-5">
                 <img src="../Assets/Media/Projet_ordercard.png" class="w-100" alt="Capture d'écran du lab order card.">
                 <div class="project d-flex flex-column align-items-center p-5">
-                    <h6 class="mb-4"><span class="main-color">Order card</span></h6>
+                    <h6 class="mb-4" id="card"><span class="main-color">Order card</span></h6>
                     <p class="descr-projet">Projet consistant à mettre en place une carte de commande à l’aide d’une maquette donnée. Le but était de me familiariser avec Bootstrap.</p>
                     <button type="button" class="btn mt-3" data-bs-toggle="modal" data-bs-target="#order-card"><span class="main-color index">Plus de détails</span></button>
                 </div>
             </div>
-            <div class="modal fade" id="order-card" tabindex="-1" aria-labelledby="Projet order card avec bootstrap" aria-hidden="true">
+            <div class="modal fade" id="order-card" tabindex="-1" aria-labelledby="card" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h6 class="modal-title w-100 text-center" id="exampleModalLabel"><span class="main-color">Order card</span></h6>
+                      <h6 class="modal-title w-100 text-center"><span class="main-color">Order card</span></h6>
                       <button type="button" class="btn-close d-flex justify-content-center align-items-center" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                     <div class="modal-body">
@@ -520,8 +516,8 @@
                             Bootstrap 5.1 pour réaliser ce projet, le but étant de me familiariser avec celui ci.</p>
                     </div>
                     <div class="modal-footer d-flex justify-content-around">
-                        <a href="https://github.com/AdrienSoriano/Order-card" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal"><i class="fa-brands fa-github"></i></button></a>
-                        <a href="https://adriens1010.promo-106.codeur.online/ordercard/" target="_blank"><button type="button" class="btn"><i class="fa-solid fa-link"></i></button></a>
+                        <a href="https://github.com/AdrienSoriano/Order-card" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://adriens1010.promo-106.codeur.online/ordercard/" class="btn" target="_blank"><i class="fa-solid fa-link"></i></a>
                       </div>
                   </div>
                 </div>
@@ -530,16 +526,16 @@
             <div class="contain d-flex flex-column align-items-center mt-5">
                 <img src="../Assets/Media/Projet_formulaire.png" class="w-100" alt="Capture d'écran du lab formulaire.">
                 <div class="project d-flex flex-column align-items-center p-5">
-                    <h6 class="mb-4"><span class="main-color">Formulaire de contact</span></h6>
+                    <h6 class="mb-4" id="formulaire-contact"><span class="main-color">Formulaire de contact</span></h6>
                     <p class="descr-projet">Projet que j’ai créé dans le but d’apprendre à réaliser un envoie de mail via un form avec l’AJAX.</p>
                     <button type="button" class="btn mt-3" data-bs-toggle="modal" data-bs-target="#formulaire"><span class="main-color index">Plus de détails</span></button>
                 </div>
             </div>
-            <div class="modal fade" id="formulaire" tabindex="-1" aria-labelledby="Projet de formulaire de contact" aria-hidden="true">
+            <div class="modal fade" id="formulaire" tabindex="-1" aria-labelledby="formulaire-contact" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h6 class="modal-title w-100 text-center" id="exampleModalLabel"><span class="main-color">Formulaire de contact</span></h6>
+                      <h6 class="modal-title w-100 text-center"><span class="main-color">Formulaire de contact</span></h6>
                       <button type="button" class="btn-close d-flex justify-content-center align-items-center" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                     <div class="modal-body">
@@ -570,8 +566,8 @@
                               confirmation apparaît disant que la demande a bien été envoyée et les champs se réinitialisent. </p>
                     </div>
                     <div class="modal-footer d-flex justify-content-around">
-                        <a href="https://github.com/AdrienSoriano/Formulaire_de_contact" target="_blank"><button type="button" class="btn" data-bs-dismiss="modal"><i class="fa-brands fa-github"></i></button></a>
-                        <a href="https://adriens1010.promo-106.codeur.online/formulaire/" target="_blank"><button type="button" class="btn"><i class="fa-solid fa-link"></i></button></a>
+                        <a href="https://github.com/AdrienSoriano/Formulaire_de_contact" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://adriens1010.promo-106.codeur.online/formulaire/" class="btn" target="_blank"><i class="fa-solid fa-link"></i></a>
                       </div>
                   </div>
                 </div>
@@ -608,7 +604,7 @@
 
             <h3 class="pt-5"><img class="blog-icon" src="../Assets/Media/Blog_icon.svg" alt="Icone de la section 'blog'">Blog</h3>
 
-            <h4 class="p-5 mb-5">Mes derniers <span class="main-color">articles de blog</span>.</h4>
+            <h4 class="p-5 mb-5">Mes derniers <span class="main-color">articles de blog</span></h4>
 
             <div class="bloc-blog d-flex flex-column align-items-center w-100 px-2 ">
                 <div class="contain  mt-5">
@@ -616,7 +612,7 @@
                         <div>
                             <div class="d-flex flex-column align-items-center">
                               
-                                    <img src="../Assets/Media/Blog_mao.png" alt="Image utilisée pour ">
+                                    <img src="../Assets/Media/Blog_mao.png" alt="Image utilisée pour l'article de blog sur la MAO.">
                                
                                 
                                 <div class="date">
@@ -635,7 +631,7 @@
                     <a  href="https://promo-106.codeur.online/blog/index.php/2022/03/21/le-projet-tor/" target="_blank">
                         <div>
                             <div class="d-flex flex-column align-items-center h-100">
-                                <img src="../Assets/Media/Blog_tor.png" alt="">
+                                <img src="../Assets/Media/Blog_tor.png" alt="Image utilisée pour l'article de blog sur Tor.">
                                 <div class="date">
                                     <span>23 mar, 22</span>
                                 </div>
@@ -652,7 +648,7 @@
                     <a  href="https://promo-106.codeur.online/blog/index.php/2022/03/15/python/" target="_blank">
                         <div>
                             <div class="d-flex flex-column align-items-center h-100">
-                                <img src="../Assets/Media/Blog_python.png" alt="">
+                                <img src="../Assets/Media/Blog_python.png" alt="Image utilisée pour l'article de blog sur Python.">
                                 <div class="date">
                                     <span>15 mar, 22</span>
                                 </div>
@@ -669,7 +665,7 @@
                     <a  href="https://promo-106.codeur.online/blog/index.php/2022/02/22/le-phishing/" target="_blank">
                         <div>
                             <div class="d-flex flex-column align-items-center h-100">
-                                <img src="../Assets/Media/Blog_phishing.png" alt="">
+                                <img src="../Assets/Media/Blog_phishing.png" alt="Image utilisée pour l'article de blog sur le phishing.">
                                 <div class="date">
                                     <span>22 fév, 22</span>
                                 </div>
@@ -686,7 +682,7 @@
                     <a  href="https://promo-106.codeur.online/blog/index.php/2022/02/10/la-realite-virtuelle/" target="_blank">
                         <div>
                             <div class="d-flex flex-column align-items-center h-100">
-                                <img src="../Assets/Media/Blog_vr.png" alt="">
+                                <img src="../Assets/Media/Blog_vr.png" alt="Image utilisée pour l'article de blog sur la VR.">
                                 <div class="date">
                                     <span>10 fév, 22</span>
                                 </div>
@@ -727,9 +723,9 @@
 
         <section id="contact" class="contact d-flex flex-column align-items-center justify-content-center reveal" data-spy>
 
-            <h3 class="pt-5"><span class="main-color">Me</span> contacter <img src="../Assets/Media/Contact_icon.svg" alt=""></h3>
+            <h3 class="pt-5"><span class="main-color">Me</span> contacter <img src="../Assets/Media/Contact_icon.svg" alt="Icone utilisée pour la section contact."></h3>
 
-            <h4 class="p-5">Entrer en <span class="main-color">contact</span>.</h4>
+            <h4 class="p-5">Entrer en <span class="main-color">contact</span></h4>
 
             <div class="d-flex flex-column align-items-center justify-content-center w-100">
                 <form class="d-flex flex-column align-items-center" method="post">
@@ -738,7 +734,7 @@
                     <input name="name" type="text" placeholder="Nom" autocomplete="off" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
                     <input name="mail" type="email" placeholder="E-mail" autocomplete="off" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" required>
                     <input name="subject" type="text" placeholder="Sujet" autocomplete="off" pattern="[0-9a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$" required>
-                    <textarea name="message" type="text" placeholder="Message" autocomplete="off" cols="30" rows="10" pattern="[0-9a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$" required></textarea>
+                    <textarea name="message" placeholder="Message" autocomplete="off" cols="30" rows="10" required></textarea>
                     <span class="main-color success p-4 fw-bold"></span>
                     <button type="submit" class="btn submit fw-bold">Soumettre</button>
 
@@ -746,13 +742,13 @@
 
                 <div class="mt-5 bg-custom p-2 pb-5 mb-5">
 
-                    <h6 class="text-center p-5">Info de contact</h6>
+                    <h6 class="text-center p-5">Infos de contact</h6>
 
                     <div class="d-flex flex-column justify-content-around">
 
                         <div class="p-2 pb-4 d-flex">
 
-                            <img src="../Assets/Media/Profil_icon.svg" alt="">
+                            <img src="../Assets/Media/Profil_icon.svg" alt="Icone signifiant le profil.">
                             <div class="p-2 d-flex flex-column">
                                 <p class="fw-bold m-0">Nom</p>
                                 <p class="m-0">Adrien Soriano</p>
@@ -762,7 +758,7 @@
 
                         <div class="p-2 pb-4 d-flex">
 
-                            <img src="../Assets/Media/Location_icon.svg" alt="">
+                            <img src="../Assets/Media/Location_icon.svg" alt="Icone signifiant la localisation.">
                             <div class="p-2 d-flex flex-column">
                                 <p class="fw-bold m-0">Localisation</p>
                                 <p class="m-0">Besançon, France</p>
@@ -772,7 +768,7 @@
 
                         <div class="p-2 pb-4 d-flex">
 
-                            <img src="../Assets/Media/phone_icon.svg" alt="">
+                            <img src="../Assets/Media/phone_icon.svg" alt="Icone signifiant le téléphone.">
                             <div class="p-2 d-flex flex-column">
                                 <p class="fw-bold m-0">Tél</p>
                                 <p class="m-0">06.18.82.59.47</p>
@@ -782,7 +778,7 @@
 
                         <div class="p-2 pb-5 d-flex">
 
-                            <img class="" src="../Assets/Media/Mail_icon.svg" alt="icone du mail">
+                            <img src="../Assets/Media/Mail_icon.svg" alt="Icone signifiant un envoie de mail.">
                             <div class="p-2 d-flex flex-column">
                                 <p class="fw-bold m-0">Email</p>
                                 <p class="m-0">adrien.soriano@gmail.com</p>
@@ -804,16 +800,16 @@
     
     <footer class="w-100 d-flex justify-content-around align-items-center flex-column reveal">
         <div class="w-75 d-flex flex-row justify-content-around align-items-center ">
-            <a href="https://github.com/AdrienSoriano" target="_blank"><img src="../Assets/Media/Github_footer.svg" alt="image du logo de Github"></a>
-            <a href="https://www.linkedin.com/in/adrien-soriano-695b46a7/" target="_blank"><img src="../Assets/Media/Linkedin_footer.svg" alt="image du logo de Linkedin"></a>
-            <a href="https://discord.gg/q2ZU8bvBSm" target="_blank"><img src="../Assets/Media/Discord_footer.svg" alt="image du logo de Discord"></a>
-            <a href=""><img src="../Assets/Media/Facebook_footer.svg" alt="image du logo de Facebook"></a>
+            <a href="https://github.com/AdrienSoriano" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adrien-soriano-695b46a7/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://discord.gg/q2ZU8bvBSm" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
         </div>
         <p class="w-100 text-center m-0 fw-bold">&copy; 2022 - Adrien Soriano</p>
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../JS/app.js"></script>
+    <script src="../JS/app.js"></script>
 </body>
 </html>

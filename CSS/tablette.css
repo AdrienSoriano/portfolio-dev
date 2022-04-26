@@ -49,8 +49,8 @@
     .bg-custom{
         width: 67%;
     }
-    footer img{
-        width: 70%;
+    footer i{
+        font-size: 4rem;
     }
     footer{
         height: 30vh!important;
