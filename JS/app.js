@@ -87,13 +87,23 @@ window.onload = function() {
 
 const form = document.querySelector('form');
 const success = document.createTextNode('Votre mail a bien été envoyé');
+const error = document.createTextNode('Veuillez remplir le formulaire correctement')
 let span = document.querySelector('.success');
-console.log(form);
+
+
+
+
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
+    let RegexMail = /^[a-z0-9.-]{2,}@+[a-z0-9.-]{2,}$/i;
+    let regexMessage = /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$/i;
+    let regexNomPrenom = /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$/i;
     const formData = new FormData(form);
     console.log(formData);
+    if((regexNomPrenom.test(document.getElementById('name').value) != true) && (regexMessage.test(document.getElementById('message').value) != true) && (regexMessage.test(document.getElementById('subject').value) != true) && (RegexMail.test(document.getElementById('mail').value) != true)){
+      span.appendChild(error)
+    }
     fetch('../PHP/index.php', {
         method: 'POST',
         body: formData
@@ -128,9 +138,18 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-/* let url = 'https://mediumpostapi.herokuapp.com/?usermedium=@a.soriano'
+
+
+// API medium
+
+let url = 'https://mediumpostapi.herokuapp.com/?usermedium=adriensoriano'
 fetch(url)
 .then((resp) => resp.json())
 .then((data) => {
     console.log(data);
-}) */
+    document.querySelector('.blog-img').src=data.dataMedium[0].image
+    document.querySelector('.date-blog').innerHTML = data.dataMedium[0].date
+    document.getElementById('blog-titre').innerHTML = data.dataMedium[0].title
+    document.getElementById('blog-descr').innerHTML = data.dataMedium[0].description
+    console.log();
+})

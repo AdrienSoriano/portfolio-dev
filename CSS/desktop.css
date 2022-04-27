@@ -432,7 +432,7 @@
         flex-direction: column!important;
     }
     .bg-custom{
-        height: 105vh;
+        height: 1000px;
         width: 40%;
     }
     .bg-custom div{
@@ -444,14 +444,53 @@
     footer i{
         font-size: 4rem;
     }
-    footer i:hover, footer p:hover{
+    footer i:hover{
         filter: drop-shadow(0 0 0.30rem #FB1B41);
+        -webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	      animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
+    @-webkit-keyframes fade-in {
+      0% {
+        filter: drop-shadow(0 0 0.30rem #0E0E10);
+      }
+      100% {
+        filter: drop-shadow(0 0 0.5rem #FB1B41);
+      }
+    }
+    @keyframes fade-in {
+      0% {
+        filter: drop-shadow(0 0 0.30rem #0E0E10);
+      }
+      100% {
+        filter: drop-shadow(0 0 0.5rem #FB1B41);
+      }
+    }
+    footer i:not(:hover){
+      filter: drop-shadow(0 0 0.30rem #0E0E10);
+      -webkit-animation: fade-out 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: fade-out 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  @-webkit-keyframes fade-out {
+    0% {
+      filter: drop-shadow(0 0 0.5rem #FB1B41);
+    }
+    100% {
+      filter: drop-shadow(0 0 0.30rem #0E0E10);
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      filter: drop-shadow(0 0 0.5rem #FB1B41);
+    }
+    100% {
+      filter: drop-shadow(0 0 0.30rem #0E0E10);
+    }
+  }
     footer{
         height: 30vh!important;
     }
     body::-webkit-scrollbar {
-        width: 5px; /* width of the entire scrollbar */
+        width: 2px; /* width of the entire scrollbar */
       }
       
       body::-webkit-scrollbar-track {

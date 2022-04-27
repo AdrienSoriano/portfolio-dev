@@ -612,16 +612,16 @@
                         <div>
                             <div class="d-flex flex-column align-items-center">
                               
-                                    <img src="../Assets/Media/Blog_mao.png" alt="Image utilisée pour l'article de blog sur la MAO.">
+                                    <img id="blog-img" class="blog-img" src="../Assets/Media/Blog_mao.png" alt="Image utilisée pour l'article de blog sur la MAO.">
                                
                                 
                                 <div class="date">
-                                    <span>07 avr, 22</span>
+                                    <span id="date-blog" class="date-blog">2022-04-15</span>
                                 </div>
                                 <div class="project article d-flex flex-column align-items-center p-0 mt-2">
-                                    <h6 class="mb-4">La MAO</h6>
+                                    <h6 id="blog-titre" class="mb-4">La MAO</h6>
                                     <p class="descr-projet text-center">Que veut dire MAO ?</p>
-                                        <p class="descr-projet text-center">MAO signifie Musique Assistée par Ordinateur. Le principe est simple, utiliser un logiciel qui permettra à l’utilisateur de construire une partition musicale ou d’enregistrer un instrument et utiliser des logiciels internes (que l’on appelle des plugins) pour changer le son de celui ci.</p>
+                                        <p id="blog-descr" class="descr-projet text-center">MAO signifie Musique Assistée par Ordinateur. Le principe est simple, utiliser un logiciel qui permettra à l’utilisateur de construire une partition musicale ou d’enregistrer un instrument et utiliser des logiciels internes (que l’on appelle des plugins) pour changer le son de celui ci.</p>
                                 </div>
                             </div>
                         </div>
@@ -633,7 +633,7 @@
                             <div class="d-flex flex-column align-items-center h-100">
                                 <img src="../Assets/Media/Blog_tor.png" alt="Image utilisée pour l'article de blog sur Tor.">
                                 <div class="date">
-                                    <span>23 mar, 22</span>
+                                    <span>2022-03-23</span>
                                 </div>
                                 <div class="project article d-flex flex-column align-items-center p-0 mt-2">
                                     <h6 class="mb-4">Le projet Tor</h6>
@@ -650,7 +650,7 @@
                             <div class="d-flex flex-column align-items-center h-100">
                                 <img src="../Assets/Media/Blog_python.png" alt="Image utilisée pour l'article de blog sur Python.">
                                 <div class="date">
-                                    <span>15 mar, 22</span>
+                                    <span>2022-03-15</span>
                                 </div>
                                 <div class="project article d-flex flex-column align-items-center p-0 mt-2">
                                     <h6 class="mb-4">Python</h6>
@@ -667,7 +667,7 @@
                             <div class="d-flex flex-column align-items-center h-100">
                                 <img src="../Assets/Media/Blog_phishing.png" alt="Image utilisée pour l'article de blog sur le phishing.">
                                 <div class="date">
-                                    <span>22 fév, 22</span>
+                                    <span>2022-02-22</span>
                                 </div>
                                 <div class="project article d-flex flex-column align-items-center p-0 mt-2">
                                     <h6 class="mb-4">Le phishing</h6>
@@ -684,7 +684,7 @@
                             <div class="d-flex flex-column align-items-center h-100">
                                 <img src="../Assets/Media/Blog_vr.png" alt="Image utilisée pour l'article de blog sur la VR.">
                                 <div class="date">
-                                    <span>10 fév, 22</span>
+                                    <span>2022-02-10</span>
                                 </div>
                                 <div class="project article d-flex flex-column align-items-center p-0 mt-2">
                                     <h6 class="mb-4">La réalité virtuelle</h6>
@@ -731,10 +731,10 @@
                 <form class="d-flex flex-column align-items-center" method="post">
 
                     
-                    <input name="name" type="text" placeholder="Nom" autocomplete="off" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
-                    <input name="mail" type="email" placeholder="E-mail" autocomplete="off" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" required>
-                    <input name="subject" type="text" placeholder="Sujet" autocomplete="off" pattern="[0-9a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$" required>
-                    <textarea name="message" placeholder="Message" autocomplete="off" cols="30" rows="10" required></textarea>
+                    <input id="name" name="name" type="text" placeholder="Nom" autocomplete="off" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
+                    <input id="mail" name="mail" type="email" placeholder="E-mail" autocomplete="off" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" required>
+                    <input id="subject" name="subject" type="text" placeholder="Sujet" autocomplete="off" pattern="[0-9a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$" required>
+                    <textarea id="message" name="message" placeholder="Message" autocomplete="off" cols="30" rows="10" required></textarea>
                     <span class="main-color success p-4 fw-bold"></span>
                     <button type="submit" class="btn submit fw-bold">Soumettre</button>
 
