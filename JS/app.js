@@ -141,15 +141,57 @@ function topFunction() {
 
 
 // API medium
+const divBlog = document.querySelector('.bloc-blog');
 
-let url = 'https://mediumpostapi.herokuapp.com/?usermedium=adriensoriano'
+
+let url = 'https://mediumpostapi.herokuapp.com/?usermedium=adriensoriano';
 fetch(url)
 .then((resp) => resp.json())
 .then((data) => {
-    console.log(data);
-    document.querySelector('.blog-img').src=data.dataMedium[0].image
-    document.querySelector('.date-blog').innerHTML = data.dataMedium[0].date
-    document.getElementById('blog-titre').innerHTML = data.dataMedium[0].title
-    document.getElementById('blog-descr').innerHTML = data.dataMedium[0].description
-    console.log();
-})
+    console.log(data.dataMedium);
+    for (let i = 0; i < data.dataMedium.length; i++) {
+      const element = data.dataMedium[i];
+      const contain = document.createElement('div');
+      contain.classList.add("contain", "mt-5");
+      const link = document.createElement('a');
+      link.href = element.link;
+      link.setAttribute("target", "_blank")
+      const div = document.createElement('div');
+      const divBloc = document.createElement('div');
+      divBloc.classList.add("d-flex", "flex-column", "align-items-center");
+      const image = document.createElement('img');
+      image.src=element.image;
+      const divDate = document.createElement('div');
+      divDate.classList.add("date");
+      const spanDate = document.createElement('span');
+      spanDate.setAttribute("id", "date-blog");
+      let dateBlog = document.createTextNode(element.date)
+      const divDescr = document.createElement('div');
+      divDescr.classList.add("project", "article", "d-flex", "flex-column", "align-items-center", "p-0", "mt-2");
+      const title = document.createElement('h6');
+      title.classList.add("mb-4")
+      let titleBlog = document.createTextNode(element.title);
+      const p = document.createElement('p');
+      p.classList.add("descr-projet", "text-center");
+      
+      divBlog.appendChild(contain);
+      contain.appendChild(link);
+      link.appendChild(div);
+      div.appendChild(divBloc);
+      divBloc.appendChild(image);
+      divBloc.appendChild(divDate);
+      divDate.appendChild(spanDate);
+      spanDate.appendChild(dateBlog)
+      divBloc.appendChild(divDescr);
+      divDescr.appendChild(title);
+      title.appendChild(titleBlog);
+      divDescr.appendChild(p);
+      p.innerHTML = element.description;
+      console.log(element.description.length);
+      if(element.description.length > 350){
+        p.innerHTML = element.description.substring(0, 300);
+      }
+      console.log(element.description.substring(0, 300));
+    }
+  })
+
