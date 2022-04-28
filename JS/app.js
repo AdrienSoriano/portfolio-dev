@@ -149,7 +149,7 @@ fetch(url)
 .then((resp) => resp.json())
 .then((data) => {
     console.log(data.dataMedium);
-    for (let i = 0; i < data.dataMedium.length; i++) {
+    for (let i = 0; i < 6; i++) {
       const element = data.dataMedium[i];
       const contain = document.createElement('div');
       contain.classList.add("contain", "mt-5");
