@@ -161,6 +161,7 @@ fetch(url)
       divBloc.classList.add("d-flex", "flex-column", "align-items-center");
       const image = document.createElement('img');
       image.src=element.image;
+      image.setAttribute("alt", "image de l'article de blog");
       const divDate = document.createElement('div');
       divDate.classList.add("date");
       const spanDate = document.createElement('span');
