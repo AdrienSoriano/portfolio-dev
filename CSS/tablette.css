@@ -17,8 +17,28 @@
         width: 90%!important;
     }
     #go-top {
-        font-size: 3rem;
-    }
+        display: none;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 5px;
+        right: 5px;
+        z-index: 99;
+        font-size: 2.5rem!important;
+        border: none;
+        outline: none;
+        background-color: #FB1B41;
+        color: #E4E3E3;
+        cursor: pointer;
+        border-radius: 5%;
+      }
+      #go-top i{
+        top: -6%;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+      }
     .logo{
         width: 20%;
         height: 15%;

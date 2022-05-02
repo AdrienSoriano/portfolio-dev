@@ -1,5 +1,4 @@
 // Partie animation au scroll
-
 const ratio = .1
 const options = {
     root: null,
@@ -15,15 +14,11 @@ const handleIntersect = function (entries, observer) {
         }
     });
 }
-
 const observer = new IntersectionObserver(handleIntersect, options)
 document.querySelectorAll('.reveal').forEach(function (r){
     observer.observe(r)
 });
-
-
 // Partie animation du texte qui s'écrit et s'efface tout seul dans le header.
-
 let TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -33,24 +28,18 @@ let TxtRotate = function(el, toRotate, period) {
     this.tick();
     this.isDeleting = false;
 };
-  
 TxtRotate.prototype.tick = function() {
     let i = this.loopNum % this.toRotate.length;
     let fullTxt = this.toRotate[i];
-  
     if (this.isDeleting) {
       this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
-  
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-  
     let that = this;
     let delta = 300 - Math.random() * 100;
-  
     if (this.isDeleting) { delta /= 2; }
-  
     if (!this.isDeleting && this.txt === fullTxt) {
       delta = this.period;
       this.isDeleting = true;
@@ -59,12 +48,10 @@ TxtRotate.prototype.tick = function() {
       this.loopNum++;
       delta = 500;
     }
-  
     setTimeout(function() {
       that.tick();
     }, delta);
 };
-  
 window.onload = function() {
     let elements = document.getElementsByClassName('txt-rotate');
     for (let i=0; i<elements.length; i++) {
@@ -80,19 +67,11 @@ window.onload = function() {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #FB1B41 }";
     document.body.appendChild(css);
 };
-
-
 // Partie formulaire avec AJAX.
-
-
 const form = document.querySelector('form');
 const success = document.createTextNode('Votre mail a bien été envoyé');
 const error = document.createTextNode('Veuillez remplir le formulaire correctement')
 let span = document.querySelector('.success');
-
-
-
-
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
@@ -113,19 +92,11 @@ form.addEventListener('submit', e =>{
         console.log(data);
         span.appendChild(success)
         return form.reset();
-
     })
 })
-
-
-
 // Bouton qui permet de revenir en haut du site.
-
-
 let mybutton = document.getElementById("go-top");
-
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -133,17 +104,12 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
 // API medium
 const divBlog = document.querySelector('.bloc-blog');
-
-
 let url = 'https://mediumpostapi.herokuapp.com/?usermedium=adriensoriano';
 fetch(url)
 .then((resp) => resp.json())
@@ -188,11 +154,8 @@ fetch(url)
       title.appendChild(titleBlog);
       divDescr.appendChild(p);
       p.innerHTML = element.description;
-      console.log(element.description.length);
-      if(element.description.length > 350){
-        p.innerHTML = element.description.substring(0, 300);
+      if(element.description.length > 200){
+        p.innerHTML = element.description.substring(0, 175);
       }
-      console.log(element.description.substring(0, 300));
     }
   })
-

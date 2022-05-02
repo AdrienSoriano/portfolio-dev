@@ -27,6 +27,9 @@ header{
     color: #FB1B41!important;
     font-weight: bold!important;
 }
+.mail-phone{
+    display: none!important;
+}
 #go-top {
     display: none;
     position: fixed;
@@ -75,6 +78,7 @@ header img:hover{
 .btn-close{
     fill: #E4E3E3!important;
 }
+
 .burger{
     display: flex;
 }
@@ -318,13 +322,13 @@ h6{
     position: relative;
     color: #E4E3E3;
     text-align: center;
-    width: 60%;
+    width: 70%;
     top: -37px;
-    left: -20%;
+    left: -15%;
     font-size: 2rem;
 }
 .article{
-    margin-top: -12%!important;
+    margin-top: -14%!important;
     width: 100%;
 }
 form{
