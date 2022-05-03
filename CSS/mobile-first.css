@@ -13,7 +13,7 @@ body{
 header{
     height: 100vh;
     background-color: #2A2A2C;
-    background-image: url(../Assets/Media/Deadpool.png);
+    /* background-image: url(../Assets/Media/Deadpool.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -93,6 +93,9 @@ header img:hover{
 .menu ul li a{
     color: #E4E3E3!important;
 }
+.offcanvas{
+    width: 60%!important;
+}
 h1{
     color: #E4E3E3;
     font-size: 3rem;
@@ -164,13 +167,13 @@ h5{
     border-radius: 20px;
 }
 .html-css{
-    width: 80%;
+    width: 70%;
 }
 .js{
-    width: 60%;
+    width: 50%;
 }
 .php{
-    width: 60%;
+    width: 50%;
 }
 .figma{
     width: 80%;
@@ -185,7 +188,7 @@ h5{
     width: 80%;
 }
 .shell{
-    width: 60%;
+    width: 50%;
 }
 .git{
     width: 80%;
@@ -378,7 +381,7 @@ input::placeholder, textarea::placeholder{
 .bg-custom{
     width: 90%;
     border-radius: 2%;
-    background-image: url(../Assets/Media/Spidey.jpg);
+    /* background-image: url(../Assets/Media/Spidey.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -400,6 +403,8 @@ footer a{
     margin: 0;
     padding: 0;
     width: auto!important;
+    color: #E4E3E3;
+    text-decoration: none;
 }
 footer i{
     font-size: 3rem;

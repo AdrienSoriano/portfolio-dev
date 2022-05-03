@@ -42,7 +42,7 @@
         width: 5vw;
     }
     #go-top i{
-        top: -7%;
+        top: 5px;
         position: relative;
         font-size: 3rem;
         text-align: center;
@@ -123,9 +123,6 @@
     }
     h3 img{
         width: 8%!important;
-    }
-    .projects img, .lab img{
-      height: 350px!important;
     }
     .projects .contain, .lab .contain{
         flex-direction: row!important;
@@ -466,46 +463,47 @@
     footer i{
         font-size: 4rem;
     }
-    footer i:hover{
+    footer i:hover, footer a:hover{
         filter: drop-shadow(0 0 0.30rem #FB1B41);
         -webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	      animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        color: #E4E3E3;
     }
     @-webkit-keyframes fade-in {
       0% {
-        filter: drop-shadow(0 0 0.30rem #0E0E10);
+        filter: drop-shadow(0 0 0.2rem #0E0E10);
       }
       100% {
-        filter: drop-shadow(0 0 0.5rem #FB1B41);
+        filter: drop-shadow(0 0 0.3rem #FB1B41);
       }
     }
     @keyframes fade-in {
       0% {
-        filter: drop-shadow(0 0 0.30rem #0E0E10);
+        filter: drop-shadow(0 0 0.2rem #0E0E10);
       }
       100% {
-        filter: drop-shadow(0 0 0.5rem #FB1B41);
+        filter: drop-shadow(0 0 0.3rem #FB1B41);
       }
     }
-    footer i:not(:hover){
+    footer i:not(:hover), footer a:not(:hover){
       filter: drop-shadow(0 0 0.30rem #0E0E10);
       -webkit-animation: fade-out 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
       animation: fade-out 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
   @-webkit-keyframes fade-out {
     0% {
-      filter: drop-shadow(0 0 0.5rem #FB1B41);
+      filter: drop-shadow(0 0 0.3rem #FB1B41);
     }
     100% {
-      filter: drop-shadow(0 0 0.30rem #0E0E10);
+      filter: drop-shadow(0 0 0.2rem #0E0E10);
     }
   }
   @keyframes fade-out {
     0% {
-      filter: drop-shadow(0 0 0.5rem #FB1B41);
+      filter: drop-shadow(0 0 0.3rem #FB1B41);
     }
     100% {
-      filter: drop-shadow(0 0 0.30rem #0E0E10);
+      filter: drop-shadow(0 0 0.2rem #0E0E10);
     }
   }
     footer{
@@ -557,9 +555,6 @@
   }
   .mail-phone a{
     width: 10%;
-  }
-  .projects img, .lab img{
-    height: 480px!important;
   }
   .bloc-blog img{
     width: 480px!important;
